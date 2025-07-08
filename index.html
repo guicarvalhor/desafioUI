@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafios - 30 Dias de UI</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header class="main-header">
+    <div class="container">
+        <a href="index.html" class="logo">30 Dias de UI</a>
+        <nav class="main-nav">
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Desafios</a></li>
+                <li><a href="comece-aqui.html">Comece por Aqui</a></li>
+            </ul>
+
+            <div class="theme-switcher">
+                    <input type="checkbox" id="theme-toggle" class="visually-hidden">
+                    <label for="theme-toggle" class="slider">
+                        <span class="visually-hidden">Mudar tema</span>
+                    </label>
+                </div>
+
+            <button class="nav-toggle" aria-label="abrir menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </div>
+</header>
+
+    <main>
+        <div class="hero">
+            <div class="container hero-container">
+                <div class="hero-text">
+                    <h1>Desafio 30 Dias de UI</h1>
+                    <p class="subtitle">Torne-se um designer melhor completando um desafio por dia.</p>
+                    <div class="progress-container">
+                        <div class="progress-bar-background">
+                            <div id="progressBar" class="progress-bar"></div>
+                        </div>
+                        <span id="progressText">0 de 30 desafios completos</span>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="imagens/uidesign.png" alt="Ilustração de uma pessoa montando a interface de um site.">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <section class="week-section">
+                <h2>📅 Semana 1 – Fundamentos Visuais</h2>
+                <div class="challenge-list">
+                    <div class="challenge-card" data-day="1">
+                        <a href="desafios/dia1.html" class="challenge-link">
+                            <img src="/imagens/semana1/Tipografia.png" alt="Ilustração sobre Tipografia" class="card-illustration">
+                            <div class="challenge-info">
+                                <h3><span class="day-number">Dia 1</span> Tipografia</h3>
+                            </div>
+                        </a>
+                        <button class="complete-btn"><i class="fa-regular fa-circle"></i></button>
+                    </div>
+                    <div class="challenge-card" data-day="2">
+                        <a href="desafios/dia2.html" class="challenge-link">
+                            <img src="/imagens/semana1/Cores.png" alt="Ilustração sobre Cores" class="card-illustration">
+                            <div class="challenge-info">
+                                <h3><span class="day-number">Dia 2</span> Paleta de Cores</h3>
+                            </div>
+                        </a>
+                        <button class="complete-btn"><i class="fa-regular fa-circle"></i></button>
+                    </div>
+                    <div class="challenge-card" data-day="3">
+                        <a href="desafios/dia3.html" class="challenge-link">
+                            <img src="/imagens/semana1/Espaçamento.png" alt="Ilustração sobre Espaçamento" class="card-illustration">
+                            <div class="challenge-info">
+                                <h3><span class="day-number">Dia 3</span> Espaçamento</h3>
+                            </div>
+                        </a>
+                        <button class="complete-btn"><i class="fa-regular fa-circle"></i></button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Projeto Desafio 30 Dias de UI.</p>
+            <p class="attribution">Ilustrações por <a href="https://www.freepik.com" target="_blank" rel="noopener noreferrer">Freepik</a>.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
