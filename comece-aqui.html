@@ -1,68 +1,305 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="pt-BR" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Comece por Aqui - 30 Dias de UI</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<header class="main-header">
-    <div class="container">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
         <a href="index.html" class="logo">30 Dias de UI</a>
         <nav class="main-nav">
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">Desafios</a></li>
-                <li><a href="comece-aqui.html">Comece por Aqui</a></li>
-            </ul>
+          <ul class="nav-links">
+            <li><a href="index.html">Desafios</a></li>
+            <li>
+              <a href="comece-aqui.html" class="active">Comece por Aqui</a>
+            </li>
+            <li>
+              <a href="sobre.html">Sobre</a>
+            </li>
 
-            <div class="theme-switcher">
-                    <input type="checkbox" id="theme-toggle" class="visually-hidden">
-                    <label for="theme-toggle" class="slider">
-                        <span class="visually-hidden">Mudar tema</span>
-                    </label>
-                </div>
-
-            <button class="nav-toggle" aria-label="abrir menu">
-                <i class="fas fa-bars"></i>
-            </button>
+          </ul>
+          <div class="theme-switcher">
+            <input type="checkbox" id="theme-toggle" class="visually-hidden" />
+            <label for="theme-toggle" class="slider">
+              <span class="visually-hidden">Mudar tema</span>
+            </label>
+          </div>
+          <button class="nav-toggle" aria-label="abrir menu">
+            <i class="fas fa-bars"></i>
+          </button>
         </nav>
-    </div>
-</header>
+      </div>
+    </header>
 
     <main>
-        <section class="intro-section">
-            <div class="container">
-                <h2>Comece por aqui</h2>
-                <div class="intro-content">
-                    <div class="intro-text">
-                        <h3>O que é UI Design?</h3>
-                        <p>UI Design (Design de Interface do Usuário) é o processo de criar a aparência e a interatividade de um aplicativo ou site. O objetivo é criar uma interface que seja visualmente atraente, fácil de usar e que guie o usuário de forma intuitiva para que ele consiga realizar suas tarefas sem esforço.</p>
+      <section class="content-page-hero">
+        <div class="container">
+          <h1>Sua jornada no universo de UI começa agora!</h1>
+          <p class="subtitle">
+            Tire suas dúvidas, encontre referências e prepare-se para decolar na
+            carreira de UI Design.
+          </p>
+        </div>
+      </section>
 
-                        <h3>Como funciona o processo?</h3>
-                        <p>O trabalho de UI geralmente começa a partir de pesquisas e wireframes (esboços básicos) feitos pelo UX Designer. A partir daí, o UI Designer aplica cores, fontes, ícones e espaçamentos para transformar o esqueleto em um design funcional e bonito. O processo envolve criar componentes, montar telas e garantir consistência visual em todo o produto.</p>
+      <section class="info-section container">
+        <div class="info-text">
+          <h2>O que faz um UI Designer?</h2>
+          <p>
+            Imagine um aplicativo como uma casa. O Designer de UI é o arquiteto
+            e o decorador. Ele não só desenha a planta baixa (o layout), mas
+            também escolhe a cor das paredes (a paleta de cores), o estilo dos
+            móveis (os componentes como botões e cards) e garante que você
+            consiga acender a luz com um interruptor fácil de achar e usar (a
+            interatividade).
+          </p>
+          <p>
+            Em resumo, a missão é criar interfaces que sejam
+            <b>bonitas, intuitivas e fáceis de usar</b>, garantindo que a
+            experiência de usar um produto digital seja agradável e eficiente.
+          </p>
+        </div>
+        <div class="info-image">
+          <img
+            src="/imagens/comeceaqui/uidesigner.jpg"
+            alt="Ilustração de arquitetura digital de interfaces"
+          />
+        </div>
+      </section>
 
-                        <h3>O que um UI Designer faz no dia a dia?</h3>
-                        <p>Um UI Designer cria as telas que você vê e interage todos os dias. Suas tarefas incluem desenhar botões, menus e layouts; escolher paletas de cores e fontes; criar protótipos interativos para testar o fluxo de uso; e organizar todos esses elementos em um "Design System" para que os desenvolvedores possam construir o produto final com precisão.</p>
-                    </div>
-                    <div class="intro-image">
-                        <img src="https://placehold.co/800x700/E9F1FA/2274D3?text=Bem-vindo(a)!&font=spac grotesk" alt="Ilustração sobre Design de Interfaces">
-                    </div>
+      <section class="comparison-section container">
+        <h2>UI e UX: A melhor dupla</h2>
+        <p class="section-subtitle">
+          Eles não são inimigos, são melhores amigos. Entenda a diferença e como
+          eles trabalham juntos.
+        </p>
+        <div class="card-deck">
+          <article class="info-card">
+            <div class="card-icon"><i class="fas fa-route"></i></div>
+            <h3>UX Design (Experiencia do Usuário)</h3>
+            <p>
+              O UX se preocupa com a <b>jornada completa</b> e o sentimento do
+              usuário. Ele é o engenheiro da casa, garantindo que a estrutura
+              seja sólida e que os cômodos façam sentido.
+            </p>
+            <ul>
+              <li>Foca na <b>lógica</b> e na <b>utilidade.</b></li>
+              <li>Faz pesquisa com usuários.</li>
+              <li>
+                Cria fluxos de navegação e wireframes e muitas outras funções.
+              </li>
+              <li>
+                Pergunta: "Este produto resolve o problema do usuário de forma
+                fácil?"
+              </li>
+            </ul>
+          </article>
+          <article class="info-card">
+            <div class="card-icon"><i class="fas fa-palette"></i></div>
+            <h3>UI Design (Interface do Usuário)</h3>
+            <p>
+              O UI se preocupa com a **aparência e interatividade** da
+              interface. Ele é o arquiteto que pega a planta do UX e a torna um
+              lugar bonito e funcional para se viver.
+            </p>
+            <ul>
+              <li>Foca no <b>visual</b> e na <b>interação.</b></li>
+              <li>Define cores, fontes e layouts.</li>
+              <li>Cria os componentes visuais e animações.</li>
+              <li>
+                Pergunta: "Este produto é visualmente atraente e intuitivo de
+                usar?"
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="info-section container alternate-layout">
+        <div class="info-image">
+          <img
+            src="/imagens/comeceaqui/figma-logo.png"
+            alt="Interface do software de design Figma"
+          />
+        </div>
+        <div class="info-text">
+          <h2>Sua ferramenta de trabalho: Conheça o Figma</h2>
+          <p>
+            O <a href="https://www.figma.com">Figma</a> é a ferramenta padrão da
+            indústria para UI/UX Design. Pense nele como o "Google Docs dos
+            designers": ele funciona diretamente no navegador, permite que
+            várias pessoas trabalhem no mesmo arquivo ao mesmo tempo e é
+            incrivelmente poderoso.
+          </p>
+
+          <h4>O que ele faz?</h4>
+          <ul>
+            <li>Criação de layouts e designs vetoriais.</li>
+            <li>Criação de protótipos clicáveis para simular o uso do app.</li>
+            <li>
+              Organização de Design Systems com componentes reutilizáveis.
+            </li>
+            <li>
+              Colaboração em tempo real com outros designers e desenvolvedores.
+            </li>
+          </ul>
+          <h4>Por que aprender Figma?</h4>
+          <p>
+            Aprender Figma não só te dá acesso a uma comunidade enorme, mas
+            também te prepara para o mercado de trabalho. Além disso, é gratuito
+            para estudantes e iniciantes!
+          </p>
+        </div>
+      </section>
+
+      <section class="course-section container">
+        <h2>Curso Gratuito para Decolar no Figma</h2>
+        <p class="section-subtitle">
+          A melhor forma de aprender é vendo na prática. Este curso do canal
+          "Chief of Design" é um dos melhores e mais completos em português para
+          quem está começando do zero absoluto.
+        </p>
+        <div class="video-container">
+          <iframe
+            width="560"
+            height="500"
+            src="https://www.youtube.com/embed/tfQYfBVgoZc?si=bDhAxBo_LfEiN8to"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="figma-community-tip">
+          <h3>Dica de Ouro: A comunidade figma</h3>
+          <p>
+            Dentro do próprio Figma, existe uma aba chamada
+            <b>"Community".</b> <br> Lá você encontra milhares de arquivos gratuitos,
+            UI Kits (como os do Google e Apple), plugins incríveis e inspiração
+            de designers do mundo todo. <br> É um recurso indispensável!
+          </p>
+          
+        </div>
+
+      </section>
+
+      <section class="tips-section container">
+        <h2>Como ser Melhor a Cada Dia em UI</h2>
+        <p class="section-subtitle">
+          Virar um mestre Jedi do design não acontece da noite para o dia. É uma
+          jornada de prática e curiosidade.
+        </p>
+        <div class="tips-grid">
+          <div class="tip-card">
+            <i class="fas fa-eye"></i>
+            <h4>Observe e Colecione</h4>
+            <p>
+              Crie uma pasta de referências. Salve telas de aplicativos que você
+              ama. Observe como eles usam cores, espaços e fontes. Use o Behance!
+            </p>
+          </div>
+          <div class="tip-card">
+            <i class="fas fa-pencil-ruler"></i>
+            <h4>Recrie para Aprender</h4>
+            <p>
+              Escolha uma tela famosa (do Instagram, Spotify, etc.) e tente
+              recriá-la no Figma. É um dos melhores exercícios para entender as
+              decisões de design.
+            </p>
+          </div>
+          <div class="tip-card">
+            <i class="fas fa-book-open"></i>
+            <h4>Leia Sobre Design</h4>
+            <p>
+              Consuma conteúdo. Siga blogs como o UX Collective no Medium,
+              Nielsen Norman Group e canais no YouTube sobre o tema.
+            </p>
+          </div>
+          <div class="tip-card">
+            <i class="fas fa-comments"></i>
+            <h4>Peça Feedback</h4>
+            <p>
+              Não tenha medo de mostrar seu trabalho. Participe de comunidades
+              de design e peça opiniões construtivas. Ajudar os outros também
+              ensina muito!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-section">
+        <div class="container">
+          <h2>Vamos nos Conectar!</h2>
+          <p>
+            Adoraria ver sua evolução durante o desafio! Me siga nas redes
+            sociais e não se esqueça de me marcar em seus posts e projetos.
+          </p>
+          <div class="social-links">
+            <a
+              href="https://www.instagram.com/gui.uiux/"
+              target="_blank"
+              class="social-btn instagram"
+            >
+              <i class="fab fa-instagram"></i> Instagram (@gui.uiux)
+            </a>
+            <a
+              href="https://www.linkedin.com/in/guilherme-cr/"
+              target="_blank"
+              class="social-btn linkedin"
+            >
+              <i class="fab fa-linkedin"></i> LinkedIn (Guilherme Cr)
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+ <footer class="main-footer">
+    <div class="container">
+        <div class="footer-main-content">
+            <div class="footer-brand">
+                <a href="/" class="logo">30 Dias de UI</a>
+                <p>Uma jornada diária para aprimorar suas habilidades em Design de Interfaces.</p>
+            </div>
+
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Navegação</h4>
+                    <ul>
+                        <li><a href="/index.html">Desafios</a></li>
+                        <li><a href="/comece-aqui.html">Comece por Aqui</a></li>
+                        <li><a href="/sobre.html">Sobre o Projeto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Me siga</h4>
+                    <ul>
+                        <li><a href="https://www.instagram.com/gui.uiux/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                        <li><a href="https://www.linkedin.com/in/guilherme-cr/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                    </ul>
                 </div>
             </div>
-        </section>
-    </main>
-    
-    <footer>
-        <div class="container">
-            <p>Projeto Desafio 30 Dias de UI</p>
         </div>
-    </footer>
-
-    <script src="js/main.js"></script>
-</body>
+        
+        <div class="footer-copyright">
+            <p>Guilherme Rodrigues &copy; 2025 uilherme Rodrigues | Todos os direitos reservados.</p>
+        </div>
+    </div>
+</footer>
+    <script src="js/main.js" defer></script>
+  </body>
 </html>

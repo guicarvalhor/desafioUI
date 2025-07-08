@@ -36,3 +36,20 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem('theme', newTheme);
     });
 });
+// Lógica do Botão de Compartilhar
+const copyButton = document.getElementById('copy-button');
+const shareText = document.getElementById('share-text');
+
+if (copyButton && shareText) {
+    copyButton.addEventListener('click', () => {
+        navigator.clipboard.writeText(shareText.innerText).then(() => {
+            // Feedback visual de que o texto foi copiado
+            copyButton.innerHTML = '<i class="fas fa-check"></i>';
+            setTimeout(() => {
+                copyButton.innerHTML = '<i class="far fa-copy"></i>';
+            }, 2000);
+        }).catch(err => {
+            console.error('Erro ao copiar texto: ', err);
+        });
+    });
+}
