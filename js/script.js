@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const button = card.querySelector('.complete-btn');
         if (completedChallenges[day]) {
             card.classList.add('completed');
-            button.innerHTML = '<i class="fa-solid fa-check"></i> Completo';
+            button.innerHTML = '<i class="fa-solid fa-check"></i>';
         } else {
             card.classList.remove('completed');
             button.innerHTML = '<i class="fa-regular fa-circle"></i>';
