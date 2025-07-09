@@ -29,6 +29,7 @@
     --color-border: var(--light-border);
     --color-text-primary: var(--light-text-primary);
     --color-text-secondary: var(--light-text-secondary);
+    --glow-color: #2824F6;
 }
 
 [data-theme='dark'] {
@@ -37,6 +38,7 @@
     --color-border: var(--dark-border);
     --color-text-primary: var(--dark-text-primary);
     --color-text-secondary: var(--dark-text-secondary);
+    --glow-color: #2824F6;
 }
 
 /* --- ESTILOS GLOBAIS --- */
@@ -68,7 +70,7 @@ main { padding-top: var(--header-height); }
 }
 .main-header .container { display: flex; justify-content: space-between; align-items: center; width: 100%; }
 .logo { font-size: 1.5rem; font-weight: 700; text-decoration: none; color: var( --primary-color); }
-.main-nav { display: flex; align-items: center; gap: 20px; }
+.main-nav { display: flex; align-items: center; gap: 40px; }
 .nav-links { list-style: none; display: flex; gap: 20px; margin: 0; padding: 0; }
 .nav-links a { color: var(--color-text-secondary); text-decoration: none; font-weight: 500; font-size: 1rem; position: relative; padding: 5px 0; transition: color 0.2s ease; }
 .nav-links a:hover { color: var(--color-text-primary); }
