@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 1. Defina a data de início do desafio.
     // Formato: Ano, Mês (lembre-se que Mês começa em 0, então 6 = Julho), Dia
-    const startDate = new Date(2025, 6, 8); // 1º de Julho de 2025
+    const startDate = new Date(2025, 6, 14); // 14 de Julho de 2025
 
     // 2. Função para calcular quantos dias se passaram
     function getDaysPassed() {
