@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia 4: Botões e Estados - 30 Dias de UI</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3WE0T6P6NG"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-3WE0T6P6NG');
+    </script>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <a href="../index.html" class="logo">30 Dias de UI</a>
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="../index.html">Desafios</a></li>
+                    <li><a href="../comece-aqui.html">Comece por Aqui</a></li>
+                    <li><a href="../sobre.html">Sobre</a></li>
+                </ul>
+                <div class="theme-switcher">
+                    <input type="checkbox" id="theme-toggle" class="visually-hidden">
+                    <label for="theme-toggle" class="slider">
+                        <span class="visually-hidden">Mudar tema</span>
+                    </label>
+                </div>
+                <button class="nav-toggle" aria-label="abrir menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="content-page">
+            <div class="container">
+                <a href="../index.html" class="back-link">← Voltar para todos os desafios</a>
+                <h1>Dia 4: Botões e seus estados</h1>
+                <p class="subtitle">Botões são os principais pontos de ação da sua interface. Vamos aprender a dar a eles uma "personalidade" para cada interação.</p>
+                
+                <div class="challenge-content">
+                    <h2>Mais que retângulos: a função de um botão</h2>
+                    <p>Um botão tem um propósito claro: sinalizar ao usuário que uma ação específica acontecerá se ele for clicado. Por isso, a clareza é fundamental. O texto de um botão (seu "rótulo" ou "label") deve ser um verbo que descreve a ação: "Salvar", "Enviar", "Cancelar", "Comprar". Evite textos genéricos como "Ok" sempre que possível.</p>
+
+                    <h2>A anatomia de um bom botão</h2>
+                    <p>Para comunicar a importância de uma ação, usamos diferentes estilos de botões. Os três tipos principais são:</p>
+                    <ul>
+                        <li><strong>Primário:</strong> A ação mais importante da tela. Geralmente tem uma cor de fundo sólida e vibrante para atrair o máximo de atenção.</li>
+                        <li><strong>Secundário:</strong> Uma ação alternativa. Costuma ter um estilo mais sutil, como apenas uma borda ou um fundo de cor clara.</li>
+                        <li><strong>Terciário (ou de Texto):</strong> Para ações de baixa prioridade. Geralmente é apenas um texto com a cor primária, sem bordas ou fundo.</li>
+                    </ul>
+
+                    <img src="/imagens/dia4/Botões.png" alt="Três tipos de botões lado a lado" class="content-image">
+
+                    <h2>Os 5 estados que todo botão deveria ter</h2>
+                    <p>Um botão não é estático; ele reage ao usuário. Projetar seus diferentes "estados" é essencial para dar feedback e criar uma experiência interativa e clara.</p>
+                    <ol>
+                        <li><strong>Default (Padrão):</strong> A aparência normal do botão, antes de qualquer interação.</li>
+                        <li><strong>Hover (Mouse Sobre):</strong> Um feedback visual sutil (ex: cor levemente mais escura, sombra suave) que aparece quando o cursor do mouse está sobre o botão, indicando que ele é clicável.</li>
+                        <li><strong>Active (Pressionado):</strong> A aparência do botão no exato momento do clique. Geralmente, uma cor mais escura ou um leve "afundamento".</li>
+                        <li><strong>Focus (Em Foco):</strong> Essencial para acessibilidade. É um anel (outline) que aparece ao redor do botão quando ele é selecionado via teclado (usando a tecla Tab).</li>
+                        <li><strong>Disabled (Desabilitado):</strong> A aparência do botão quando a ação não pode ser realizada (ex: um botão "Enviar" antes de um formulário ser preenchido). Geralmente é acinzentado e com baixa opacidade.</li>
+                    </ol>
+                    
+                    <h2>Vídeos para dar o clique no seu cérebro</h2>
+                    <p>Veja na prática como criar e organizar esses componentes e seus estados no Figma.</p>
+
+                    <div class="video-container">
+                        <h3>Como criar BOTÕES no Figma (Canal Kevin Power)</h3>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/k7x9hzwGx5g?si=dFeZRxaQggxOTWSR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    
+                    <div class="challenge-task enhanced-task">
+                        <div class="task-header">
+                            <i class="fas fa-mouse-pointer"></i>
+                            <h2>Seu desafio de hoje: O ciclo de vida de um botão</h2>
+                        </div>
+                        <p>Sua missão é criar dois tipos de botões e todas as suas variações de estado, um passo fundamental para qualquer Design System.</p>
+                        
+                        <div class="task-reference">
+                            <h4>Checklist do desafio:</h4>
+                            <ol>
+                                <li>Desenhe um botão <strong>Primário</strong> (ex: "Confirmar Pagamento").</li>
+                                <li>Desenhe um botão <strong>Secundário</strong> (ex: "Voltar para a loja").</li>
+                                <li>Para <b>ambos</b> os botões, crie as 5 variantes de estado: Padrão, Mouse sobre, Pressionado, Em foco e Desabilitado.</li>
+                                <li>Organize todos os 10 botões resultantes em uma grade para apresentar seu trabalho.</li>
+                            </ol>
+                        </div>
+    
+                        <div class="task-share">
+                            <h4>Concluiu? Mostre suas interações!</h4>
+                            <p>Compartilhe o resultado no LinkedIn. É um ótimo exemplo do seu cuidado com os detalhes da interação.</p>
+                            <div class="share-box">
+                                <pre id="share-text">Desafio do Dia 4 do #Desafio30diasUI concluído! Hoje o foco foi em Botões e seus Estados. Criei variantes para os estados Default, Hover, Active, Focus e Disabled. Um passo essencial na criação de um Design System robusto! 👨‍💻 #UIDesign #DesignDeInterfaces #DesignSystem</pre>
+                                <button id="copy-button" title="Copiar texto"><i class="far fa-copy"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-main-content">
+                <div class="footer-brand">
+                    <a href="/" class="logo">30 Dias de UI</a>
+                    <p>Uma jornada diária para aprimorar suas habilidades em Design de Interfaces.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Navegação</h4>
+                        <ul>
+                            <li><a href="/index.html">Desafios</a></li>
+                            <li><a href="/comece-aqui.html">Comece por Aqui</a></li>
+                            <li><a href="/sobre.html">Sobre</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Me siga</h4>
+                        <ul>
+                            <li><a href="https://www.instagram.com/gui.uiux/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                            <li><a href="https://www.linkedin.com/in/guilherme-cr/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>Guilherme Rodrigues © 2025 | Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js" defer></script>
+</body>
+</html>

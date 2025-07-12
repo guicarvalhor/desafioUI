@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia 6: Grid e Layout Responsivo - 30 Dias de UI</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3WE0T6P6NG"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-3WE0T6P6NG');
+    </script>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <a href="../index.html" class="logo">30 Dias de UI</a>
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="../index.html">Desafios</a></li>
+                    <li><a href="../comece-aqui.html">Comece por Aqui</a></li>
+                    <li><a href="../sobre.html">Sobre</a></li>
+                </ul>
+                <div class="theme-switcher">
+                    <input type="checkbox" id="theme-toggle" class="visually-hidden">
+                    <label for="theme-toggle" class="slider">
+                        <span class="visually-hidden">Mudar tema</span>
+                    </label>
+                </div>
+                <button class="nav-toggle" aria-label="abrir menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="content-page">
+            <div class="container">
+                <a href="../index.html" class="back-link">← Voltar para todos os desafios</a>
+                <h1>Dia 6: Grid e layout responsivo</h1>
+                <p class="subtitle">A espinha dorsal de todo bom design. Aprenda a organizar seu conteúdo de forma harmoniosa e a garantir que ele fique ótimo em qualquer tela.</p>
+                
+                <div class="challenge-content">
+                    <h2>O que é um sistema de grid?</h2>
+                    <p>Pense no grid como as colunas invisíveis de um jornal ou revista. Elas não fazem parte do conteúdo, mas servem como um guia para posicionar cada texto e imagem de forma consistente. Em web design, o grid mais comum é o de <strong>12 colunas</strong>. Por quê 12? Porque é um número magicamente divisível por 2, 3, 4 e 6, o que nos dá imensa flexibilidade para criar layouts (ex: duas colunas de 6, três de 4, quatro de 3, etc.).</p>
+
+                    <img src="/imagens/dia6/grid.png" alt="Layout de site com um grid de 12 colunas sobreposto" class="content-image">
+
+                    <h2>Layout responsivo: o design que se adapta</h2>
+                    <p>Design responsivo é a prática de criar interfaces que "respondem" e se adaptam a diferentes tamanhos de tela. Um layout que funciona bem em um monitor de 27 polegadas precisa se reorganizar para ser legível e funcional em um celular de 6 polegadas. Isso geralmente é feito definindo "breakpoints" (pontos de quebra), que são larguras de tela onde o design muda. Por exemplo, um layout com 3 cards lado a lado no desktop pode se transformar em uma lista com os 3 cards empilhados verticalmente no mobile.</p>
+
+                    <h2>Colunas, calhas e margens: o vocabulário do grid</h2>
+                    <p>Para configurar seu grid no Figma, você encontrará estes termos:</p>
+                    <ul>
+                        <li><strong>Colunas (Columns):</strong> Os blocos verticais onde seu conteúdo será alinhado.</li>
+                        <li><strong>Calhas (Gutters):</strong> O espaço horizontal *entre* cada uma das colunas. É essencial para o respiro.</li>
+                        <li><strong>Margens (Margins):</strong> O espaço nas laterais externas do grid, que o afasta das bordas da tela.</li>
+                    </ul>
+
+                    <h2>Vídeos para estruturar suas ideias</h2>
+                    <p>Aprender a configurar e usar grids no Figma é o primeiro passo para criar layouts profissionais.</p>
+
+                    <div class="video-container">
+                        <h3>Como usar GRID no figma? Web e Mobile (Canal Hericky Alencar)</h3>
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/TWyg32P7G4A?si=nroNKuAnd1I9_T5C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    
+                    <div class="challenge-task enhanced-task">
+                        <div class="task-header">
+                            <i class="fas fa-columns"></i>
+                            <h2>Seu desafio de hoje: o camaleão de telas</h2>
+                        </div>
+                        <p>Hoje o desafio é pensar de forma adaptativa. Você vai desenhar a mesma tela simples em duas versões: uma para desktop e outra para mobile, usando um grid de 12 colunas como base.</p>
+                        
+                        <div class="task-reference">
+                            <h4>Checklist do desafio:</h4>
+                            <ol>
+                                <li>No Figma, crie um Frame para "Desktop" (ex: 1440px de largura) e ative um Layout Grid de 12 colunas nele.</li>
+                                <li>Dentro dele, crie um layout simples com um título e três "cards de feature" lado a lado (cada card pode ocupar 4 colunas, por exemplo).</li>
+                                <li>Agora, crie um Frame para "Mobile" (ex: 375px de largura) com um grid de 4 ou 6 colunas.</li>
+                                <li>Adapte o mesmo conteúdo para a tela mobile. Como os três cards se comportarão? Eles devem ficar empilhados na vertical.</li>
+                            </ol>
+                        </div>
+    
+                        <div class="task-share">
+                            <h4>Concluiu? Mostre sua versatilidade!</h4>
+                            <p>Compartilhar designs responsivos mostra que você pensa na experiência do usuário em todos os contextos.</p>
+                            <div class="share-box">
+                                <pre id="share-text">Dia 6 do #Desafio30diasUI concluído! Hoje foi dia de pensar em Grid e Layout Responsivo. Criei um layout simples e fiz sua adaptação do desktop para o mobile. É um ótimo exercício para pensar em estrutura! 📱💻 #UIDesign #ResponsiveDesign #DesignDeInterfaces</pre>
+                                <button id="copy-button" title="Copiar texto"><i class="far fa-copy"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-main-content">
+                <div class="footer-brand">
+                    <a href="/" class="logo">30 Dias de UI</a>
+                    <p>Uma jornada diária para aprimorar suas habilidades em Design de Interfaces.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Navegação</h4>
+                        <ul>
+                            <li><a href="/index.html">Desafios</a></li>
+                            <li><a href="/comece-aqui.html">Comece por Aqui</a></li>
+                            <li><a href="/sobre.html">Sobre</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Me siga</h4>
+                        <ul>
+                            <li><a href="https://www.instagram.com/gui.uiux/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                            <li><a href="https://www.linkedin.com/in/guilherme-cr/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>Guilherme Rodrigues © 2025 | Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia 7: Seu Primeiro Design System - 30 Dias de UI</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3WE0T6P6NG"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-3WE0T6P6NG');
+    </script>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <a href="../index.html" class="logo">30 Dias de UI</a>
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="../index.html">Desafios</a></li>
+                    <li><a href="../comece-aqui.html">Comece por Aqui</a></li>
+                    <li><a href="../sobre.html">Sobre</a></li>
+                </ul>
+                <div class="theme-switcher">
+                    <input type="checkbox" id="theme-toggle" class="visually-hidden">
+                    <label for="theme-toggle" class="slider">
+                        <span class="visually-hidden">Mudar tema</span>
+                    </label>
+                </div>
+                <button class="nav-toggle" aria-label="abrir menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="content-page">
+            <div class="container">
+                <a href="../index.html" class="back-link">← Voltar para todos os desafios</a>
+                <h1>Dia 7: Início do seu design system</h1>
+                <p class="subtitle">Parabéns por completar a primeira semana! Agora vamos organizar a casa e criar a base para todos os seus futuros projetos.</p>
+                
+                <div class="challenge-content">
+
+                    <div class="milestone-box">
+                        <div class="milestone-icon">🎉</div>
+                        <div class="milestone-text">
+                            <h3>Parabéns por chegar até aqui!</h3>
+                            <p>Completar 7 dias seguidos de prática é uma vitória imensa e te coloca em um grupo seleto de pessoas que transformam a intenção em ação. O hábito que você está construindo é mais valioso do que qualquer layout perfeito. A jornada do design é uma maratona, não uma corrida de 100 metros. **Não desista!** O progresso é garantido se você continuar firme. Estamos só começando!</p>
+                        </div>
+                    </div>
+
+                    <h2>O que é um design system, afinal?</h2>
+                    <p>Pense em um Design System como uma **caixa de LEGO oficial** para um projeto. Em vez de criar uma peça nova toda vez que precisa de algo, você consulta a caixa e usa as peças que já existem e foram aprovadas. Isso garante que todo o "castelo" (ou site, ou aplicativo) que você construir tenha a mesma aparência, o mesmo encaixe e a mesma qualidade.</p>
+                    <p>Ele é a "fonte única da verdade" que alinha designers e desenvolvedores, economizando tempo e garantindo consistência.</p>
+                    
+                    <h2>Os seus primeiros "tokens" de design</h2>
+                    <p>"Tokens" são os átomos do seu Design System. São as decisões de design fundamentais que você já tomou nesta primeira semana! Eles são as variáveis do seu design.</p>
+                    <ul>
+                        <li><strong>Tokens de cor:</strong> Sua paleta primária, secundária e de destaque.</li>
+                        <li><strong>Tokens de tipografia:</strong> Sua escala tipográfica (H1, Corpo, etc.).</li>
+                        <li><strong>Tokens de espaçamento:</strong> Seus valores baseados em 8px (8, 16, 24...).</li>
+                        <li><strong>Componentes (Átomos maiores):</strong> Seus botões e campos de formulário, com todos os seus estados.</li>
+                    </ul>
+
+                    <img src="/imagens/dia7/DesignSystem.png" alt="Exemplo de um guia de estilos com cores, fontes e componentes" class="content-image">
+                    
+                    <h2>Vídeos para sistematizar o conhecimento</h2>
+                    <p>Entenda o conceito de Design System e veja como começar a organizar o seu no Figma.</p>
+
+                    <div class="video-container">
+                        <h3>O que é Design System? (Canal Caio Gonzalez)</h3>
+                       <iframe width="560" height="315" src="https://www.youtube.com/embed/ajqbXpFVaAw?si=5bSyBYX7YppY8X2v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    
+                    <div class="challenge-task enhanced-task">
+                        <div class="task-header">
+                            <i class="fas fa-book"></i>
+                            <h2>Seu desafio de hoje: o bibliotecário do design</h2>
+                        </div>
+                        <p>Hoje o desafio é ser o organizador do seu próprio projeto. Você vai criar uma única página ou frame no Figma para documentar tudo o que fez e definiu na Semana 1, criando a primeira versão do seu Mini Design System.</p>
+                        
+                        <div class="task-reference">
+                            <h4>Checklist do desafio:</h4>
+                            <ol>
+                                <li>Crie uma seção para <b>Cores</b> e adicione sua paleta primária, secundária e de destaque.</li>
+                                <li>Crie uma seção para <b>Tipografias</b> e demonstre todos os estilos da sua escala (H1, Corpo, etc.).</li>
+                                <li>Crie uma seção para <b>Espaçamentos</b> e mostre exemplos da sua regra de 8px.</li>
+                                <li>Crie uma seção para  <b>Componentes</b> e organize os botões e campos de formulário que você desenhou.</li>
+                                <li><strong>(Bônus)</strong> Use os recursos de "Styles" e "Components" do Figma para transformar seus estilos e elementos em itens reutilizáveis.</li>
+                            </ol>
+                        </div>
+    
+                        <div class="task-share">
+                            <h4>Concluiu a primeira semana? Comemore!</h4>
+                            <p>Compartilhar a conclusão de uma etapa importante mostra comprometimento e disciplina.</p>
+                            <div class="share-box">
+                                <pre id="share-text">Semana 1 do #Desafio30diasUI finalizada! 🥳 Foram 7 dias de muito aprendizado sobre os fundamentos do UI. Para consolidar tudo, o desafio de hoje foi criar a primeira versão de um Design System. Próximo nível: componentes! #UIDesign #DesignSystem #UIChallenge</pre>
+                                <button id="copy-button" title="Copiar texto"><i class="far fa-copy"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-main-content">
+                <div class="footer-brand">
+                    <a href="/" class="logo">30 Dias de UI</a>
+                    <p>Uma jornada diária para aprimorar suas habilidades em Design de Interfaces.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Navegação</h4>
+                        <ul>
+                            <li><a href="/index.html">Desafios</a></li>
+                            <li><a href="/comece-aqui.html">Comece por Aqui</a></li>
+                            <li><a href="/sobre.html">Sobre</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Me siga</h4>
+                        <ul>
+                            <li><a href="https://www.instagram.com/gui.uiux/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                            <li><a href="https://www.linkedin.com/in/guilherme-cr/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>Guilherme Rodrigues © 2025 | Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js" defer></script>
+</body>
+</html>

@@ -1,188 +1,151 @@
 <!DOCTYPE html>
 <html lang="pt-BR" data-theme="dark">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia 3: Espaçamento e Hierarquia - 30 Dias de UI</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3WE0T6P6NG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-    <title>Dia X: Título do Desafio - 30 Dias de UI</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    />
-
-    <link rel="stylesheet" href="../style.css" />
-  </head>
-  <body>
+  gtag('config', 'G-3WE0T6P6NG');
+</script>
+<body>
     <header class="main-header">
-      <div class="container">
-        <a href="../index.html" class="logo">30 Dias de UI</a>
-        <nav class="main-nav">
-          <ul class="nav-links">
-            <li><a href="../index.html">Desafios</a></li>
-            <li><a href="../comece-aqui.html">Comece por Aqui</a></li>
-          </ul>
-          <div class="theme-switcher">
-            <input type="checkbox" id="theme-toggle" class="visually-hidden" />
-            <label for="theme-toggle" class="slider">
-              <span class="visually-hidden">Mudar tema</span>
-            </label>
-          </div>
-          <button class="nav-toggle" aria-label="abrir menu">
-            <i class="fas fa-bars"></i>
-          </button>
-        </nav>
-      </div>
+        <div class="container">
+            <a href="../index.html" class="logo">30 Dias de UI</a>
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="../index.html">Desafios</a></li>
+                    <li><a href="../comece-aqui.html">Comece por Aqui</a></li>
+                    <li><a href="../sobre.html">Sobre</a></li>
+                </ul>
+                <div class="theme-switcher">
+                    <input type="checkbox" id="theme-toggle" class="visually-hidden">
+                    <label for="theme-toggle" class="slider">
+                        <span class="visually-hidden">Mudar tema</span>
+                    </label>
+                </div>
+                <button class="nav-toggle" aria-label="abrir menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
     </header>
 
     <main>
-      <section class="content-page">
-        <div class="container">
-          <a href="../index.html" class="back-link"
-            >&larr; Voltar para todos os desafios</a
-          >
-          <h1>Dia 3: Espaçamento e Hierarquia Visual</h1>
-          <p class="subtitle">
-            Dê um espaço! No design, isso é um elogio. Hoje vamos aprender a
-            usar o vazio para organizar, guiar e acalmar a mente do usuário.
-          </p>
+        <section class="content-page">
+            <div class="container">
+                <a href="../index.html" class="back-link">← Voltar para todos os desafios</a>
+                <h1>Dia 3: Espaçamento e Hierarquia Visual</h1>
+                <p class="subtitle">Aprenda a usar o 'nada' para organizar tudo. O espaço em branco é o herói invisível do bom design.</p>
+                
+                <div class="challenge-content">
+                    <h2>O herói invisível do design: O espaço em branco</h2>
+                    <p>O espaço em branco (ou espaço negativo) não é espaço "vazio" ou "desperdiçado". Pelo contrário, é uma ferramenta ativa e poderosa. É o respiro entre os elementos, a pausa entre as palavras. Um bom uso do espaço em branco:</p>
+                    <ul>
+                        <li><strong>Agrupa elementos relacionados:</strong> A proximidade indica relação. Itens perto uns dos outros são percebidos como um grupo.</li>
+                        <li><strong>Reduz a carga cognitiva:</strong> Uma tela cheia de coisas cansa o cérebro. Espaços generosos tornam a interface mais limpa e fácil de processar.</li>
+                        <li><strong>Cria foco e hierarquia:</strong> Deixar mais espaço ao redor de um botão o torna mais importante. Simples assim.</li>
+                    </ul>
 
-          <div class="challenge-content">
-            <h2>O Herói Invisível do Design: O Espaço em Branco</h2>
-            <p>
-              O espaço em branco (ou espaço negativo) não é espaço "vazio" ou
-              "desperdiçado". Pelo contrário, é uma ferramenta ativa e poderosa.
-              É o respiro entre os elementos, a pausa entre as palavras. Um bom
-              uso do espaço em branco:
-            </p>
-            <ul>
-              <li>
-                <strong>Agrupa elementos relacionados:</strong> A proximidade
-                indica relação. Itens perto uns dos outros são percebidos como
-                um grupo.
-              </li>
-              <li>
-                <strong>Reduz a carga cognitiva:</strong> Uma tela cheia de
-                coisas cansa o cérebro. Espaços generosos tornam a interface
-                mais limpa e fácil de processar.
-              </li>
-              <li>
-                <strong>Cria foco e hierarquia:</strong> Deixar mais espaço ao
-                redor de um botão o torna mais importante. Simples assim.
-              </li>
-            </ul>
+                    <h2>A dupla que define tudo: Padding vs. Margin</h2>
+                    <p>Essa é a dupla que define 90% dos seus espaçamentos. Confundi-los é normal no começo, mas vamos deixar bem claro para você nunca mais esquecer:</p>
+                    <ul>
+                        <li><strong>Padding (Preenchimento):</strong> É o <strong>espaço interno</strong> de um elemento. Pense no padding como o "recheio" da sua caixa, o espaço entre o conteúdo e a borda.</li>
+                        <li><strong>Margin (Margem):</strong> É o <strong>espaço externo</strong> de um elemento. É a "distância social" entre sua caixa e os vizinhos. A margin empurra os outros elementos para longe.</li>
+                    </ul>
 
-            <h2>A Dupla Dinâmica: Padding vs. Margin</h2>
-            <p>
-              Essa é a dupla que define 90% dos seus espaçamentos. Confundi-los
-              é normal no começo, mas vamos deixar bem claro para você nunca
-              mais esquecer:
-            </p>
-            <ul>
-              <li>
-                <strong>Padding (Preenchimento):</strong> É o
-                <strong>espaço interno</strong> de um elemento. Pense no padding
-                como o "recheio" da sua caixa, o espaço entre o conteúdo e a
-                borda. É o fofinho do travesseiro.
-              </li>
-              <li>
-                <strong>Margin (Margem):</strong> É o
-                <strong>espaço externo</strong> de um elemento. É a "distância
-                social" entre sua caixa e os vizinhos. A margin empurra os
-                outros elementos para longe.
-              </li>
-            </ul>
+                    <img src="/imagens/dia3/Margin.png" alt="Diagrama explicando a diferença entre Padding (espaço interno) e Margin (espaço externo)" class="content-image">
 
-            <img
-              src="https://i.imgur.com/M5Sj2sW.png"
-              alt="Diagrama explicando a diferença entre Padding (espaço interno) e Margin (espaço externo)"
-              class="content-image"
-            />
+                    <h2>Colocando ordem na casa: o sistema de 8 pontos</h2>
+                    <p>Para evitar usar números aleatórios como "13px" ou "27px", designers profissionais usam um sistema de espaçamento. O mais popular é o sistema de múltiplos de 8 (ou 4). Isso significa que todos os seus paddings, margins e até alturas de linha serão baseados em múltiplos de 8 (8px, 16px, 24px, 32px, 40px, etc.). Isso cria um ritmo visual consistente e deixa seu design com uma aparência muito mais profissional e harmoniosa.</p>
 
-            <h2>A Regra dos 8px: Colocando Ordem na Casa</h2>
-            <p>
-              Para evitar usar números aleatórios como "13px" ou "27px",
-              designers profissionais usam um sistema de espaçamento. O mais
-              popular é o sistema de múltiplos de 8 (ou 4). Isso significa que
-              todos os seus paddings, margins e até alturas de linha serão
-              baseados em múltiplos de 8 (8px, 16px, 24px, 32px, 40px, etc.).
-              Isso cria um ritmo visual consistente e deixa seu design com uma
-              aparência muito mais profissional e harmoniosa.
-            </p>
+                    <h2>Vídeos para organizar as ideias</h2>
+                    <p>Ver o espaçamento sendo aplicado na prática ajuda muito a fixar os conceitos. Confira estes vídeos:</p>
 
-            <h2>Vídeos para organizar as ideias</h2>
-            <p>
-              Ver o espaçamento sendo aplicado na prática ajuda muito a fixar os
-              conceitos. Confira estes vídeos:
-            </p>
+                    <div class="video-container">
+                        <h3>Espaçamento em UI Design (Canal DH Correa)</h3>
+                       <iframe width="560" height="315" src="https://www.youtube.com/embed/m8CTT12WcqA?si=1EyTrC2K4Df9KInQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
 
-            <div class="video-container">
-              <h3>Espaçamento no UI Design: Dicas Essenciais (Canal Dois M)</h3>
-              <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/gAf_8Zt25go"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
-              ></iframe>
+                    <div class="video-container">
+                        <h3>Figma Auto Layout 3.0: Design Responsivo, Wrap & Breakpoints! (Canal Feux)</h3>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Gg2cH_VuckE?si=wDHVMIF_EVNbzn_2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    
+                    <div class="challenge-task enhanced-task">
+                        <div class="task-header">
+                            <i class="fas fa-ruler-combined"></i>
+                            <h2>Seu desafio de hoje: A Faxina no Layout</h2>
+                        </div>
+                        <p>Pegue o card que você criou e coloriu nos dias anteriores. Agora, sua missão é <b>refatorar</b> todos os espaçamentos. Aplique a <strong>regra dos 8px</strong> para definir todos os paddings (espaços internos) e as margins (distância entre os elementos, se houver mais de um card).</p>
+                        
+                        <div class="task-reference">
+                            <h4>Checklist do desafio:</h4>
+                            <ol>
+                                <li>Verifique todos os espaços entre os textos e as bordas do card (padding).</li>
+                                <li>Ajuste todos esses valores para um múltiplo de 8 (ex: 16px, 24px).</li>
+                                <li>Observe a diferença! O layout parece mais "respirável" e organizado?</li>
+                            </ol>
+                        </div>
+    
+                        <div class="task-share">
+                            <h4>Concluiu? Conte sobre seu processo!</h4>
+                            <p>Compartilhar o "porquê" das suas decisões é tão importante quanto o resultado visual.</p>
+                            <div class="share-box">
+                                <pre id="share-text">Dia 3 do #30DiasDeUI concluído! O foco de hoje foi Espaçamento e Hierarquia. Refatorei meu design anterior para usar o sistema de 8px. É incrível como a consistência nos espaços deixa tudo mais limpo e profissional. 📐 #UIDesign #Desafio30diasUI</pre>
+                                <button id="copy-button" title="Copiar texto"><i class="far fa-copy"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div class="video-container">
-              <h3>
-                Aprenda a usar Auto Layout e Espaçamentos no Figma (Canal da
-                Awari)
-              </h3>
-              <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/PVYA-duF3fU"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
-              ></iframe>
-            </div>
-
-            <div class="challenge-task">
-              <h2>Seu Desafio de Hoje: A faxina no Layout</h2>
-              <p>
-                Pegue o card que você criou e coloriu nos dias anteriores.
-                Agora, sua missão é **refatorar** todos os espaçamentos. Aplique
-                a <strong>regra dos 8px</strong> para definir todos os paddings
-                (espaços internos) e as margins (distância entre os elementos,
-                se houver mais de um card). Observe como o layout fica mais
-                "respirável", limpo e profissional com essa simples mudança.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
     </main>
-    <footer>
-      <div class="container">
-        <p>Projeto Desafio 30 Dias de UI.</p>
-        <p class="attribution">
-          Ilustrações por
-          <a
-            href="https://www.freepik.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Freepik</a
-          >.
-        </p>
-      </div>
-    </footer>
 
-    <script src="../js/main.js"></script>
-  </body>
+     <footer class="main-footer">
+    <div class="container">
+        <div class="footer-main-content">
+            <div class="footer-brand">
+                <a href="/" class="logo">30 Dias de UI</a>
+                <p>Uma jornada diária para aprimorar suas habilidades em Design de Interfaces.</p>
+            </div>
+
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Navegação</h4>
+                    <ul>
+                        <li><a href="/index.html">Desafios</a></li>
+                        <li><a href="/comece-aqui.html">Comece por Aqui</a></li>
+                        <li><a href="/sobre.html">Sobre o Projeto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Me siga</h4>
+                    <ul>
+                        <li><a href="https://www.instagram.com/gui.uiux/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                        <li><a href="https://www.linkedin.com/in/guilherme-cr/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-copyright">
+            <p>Guilherme Rodrigues &copy; 2025 | Todos os direitos reservados.</p>
+        </div>
+    </div>
+
+    <script src="../js/main.js" defer></script>
+</body>
 </html>

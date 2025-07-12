@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia 5: Campos de Formulário - 30 Dias de UI</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3WE0T6P6NG"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-3WE0T6P6NG');
+    </script>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <a href="../index.html" class="logo">30 Dias de UI</a>
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="../index.html">Desafios</a></li>
+                    <li><a href="../comece-aqui.html">Comece por Aqui</a></li>
+                    <li><a href="../sobre.html">Sobre</a></li>
+                </ul>
+                <div class="theme-switcher">
+                    <input type="checkbox" id="theme-toggle" class="visually-hidden">
+                    <label for="theme-toggle" class="slider">
+                        <span class="visually-hidden">Mudar tema</span>
+                    </label>
+                </div>
+                <button class="nav-toggle" aria-label="abrir menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="content-page">
+            <div class="container">
+                <a href="../index.html" class="back-link">← Voltar para todos os desafios</a>
+                <h1>Dia 5: Campos de formulário</h1>
+                <p class="subtitle">A porta de entrada para os dados do usuário. Vamos projetar inputs, selects e checkboxes que sejam claros, úteis e acessíveis.</p>
+                
+                <div class="challenge-content">
+                    <h2>A conversa silenciosa: o que é um bom formulário?</h2>
+                    <p>Formulários são, essencialmente, uma conversa entre a interface e o usuário. Um bom formulário é como um bom entrevistador: ele faz perguntas claras, uma de cada vez, e ajuda o usuário a responder corretamente. Os princípios são simples: peça apenas o essencial, agrupe informações relacionadas (ex: dados pessoais, endereço) e, o mais importante, forneça feedback claro a cada passo.</p>
+
+                    <h2>Anatomia dos campos mais comuns</h2>
+                    <p>Vamos dissecar os componentes que formam a maioria dos formulários na web:</p>
+                    <ul>
+                        <li><strong>Input de texto:</strong> O campo básico para coletar textos curtos, como nome, e-mail ou senha. É composto por uma `Label` (o rótulo, essencial para acessibilidade), o campo em si e, opcionalmente, um `Placeholder` (texto de dica, que some ao digitar).</li>
+                        <img src="/imagens/dia5/Inputs.png" alt="" class="content-image">
+                        <li><strong>Checkbox:</strong> Usado quando o usuário pode selecionar <b>várias opções</b> de uma lista (ex: "Quais são seus hobbies?").</li>
+                         <img src="/imagens/dia5/checkbox.png" alt="" class="content-image">
+                        <li><strong>Radio button:</strong> Usado quando o usuário deve escolher <b>apenas uma opção</b> de uma lista (ex: "Qual seu nível de experiência?").</li>
+                         <img src="/imagens/dia5/Radio.png" alt="" class="content-image">
+                        <li><strong>Select (Dropdown):</strong> Um menu suspenso, ideal para economizar espaço quando há uma lista longa de opções a serem escolhidas (ex: selecionar um país).</li>
+                         <img src="/imagens/dia5/Select.png" alt="" class="content-image">
+                    </ul>
+
+                    <h2>Os estados dos inputs (sim, eles também têm!)</h2>
+                    <p>Assim como os botões, os campos de formulário reagem à interação do usuário. Projetar esses estados é crucial para uma boa experiência.</p>
+                    <ol>
+                        <li><strong>Default (Padrão):</strong> O campo vazio, pronto para receber informação.</li>
+                        <li><strong>Focus (Em foco):</strong> Quando o usuário clica no campo para digitar. É vital ter um indicador visual (como uma borda colorida) para mostrar onde o usuário está.</li>
+                        <li><strong>Error (Erro):</strong> Como o campo se parece quando a informação inserida é inválida. Geralmente com uma borda vermelha e uma mensagem de ajuda abaixo.</li>
+                        <li><strong>Disabled (Desabilitado):</strong> Quando o campo não está disponível para interação.</li>
+                       
+                    </ol>
+
+                    <img src="/imagens/dia5/Estados.png" alt="Os diferentes estados de um campo de formulário" class="content-image">
+                    
+                    <h2>Vídeos para preencher seu conhecimento</h2>
+                    <p>Veja como designers profissionais abordam a criação de formulários e seus componentes no Figma.</p>
+
+                    <div class="video-container">
+                        <h3>Como criar um INPUT FIELD para seu FORMULÁRIO no Figma (Canal Crafting UX: Design, Usabilidade e IA)</h3>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/PTFNXstplfk?si=HKhZuqd8JUEMr1la" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    
+                    <div class="challenge-task enhanced-task">
+                        <div class="task-header">
+                            <i class="fas fa-keyboard"></i>
+                            <h2>Seu desafio de hoje: montando as peças de um formulário</h2>
+                        </div>
+                        <p>Hoje você não vai montar um formulário inteiro, mas sim os seus componentes essenciais. Isso te ajudará a criar uma biblioteca para usar no futuro.</p>
+                        
+                        <div class="task-reference">
+                            <h4>Checklist do desafio:</h4>
+                            <ol>
+                                <li>Desenhe um campo de <b>Input de Texto</b> para "Nome de usuário", mostrando seu estado de <b>Foco</b></li>
+                                <li>Crie um conjunto de <b>Checkboxes</b> para uma pergunta como "Quais notificações deseja receber?".</li>
+                                <li>Desenhe um menu <b>Dropdown (Select)</b> para o usuário escolher um item de uma lista.</li>
+                                <li>Crie uma variante de <b>Input de texto</b> com estado de <b>Erro</b>, incluindo uma mensagem de ajuda abaixo (ex: "Formato de e-mail inválido").</li>
+                            </ol>
+                        </div>
+    
+                        <div class="task-share">
+                            <h4>Concluiu? Compartilhe seus componentes!</h4>
+                            <p>Um bom formulário é a base de muitas interações. Mostre como você pensou nos detalhes.</p>
+                            <div class="share-box">
+                                <pre id="share-text">Dia 5 do #Desafio30diasUI! Hoje o foco foi em componentes de formulário. Criei inputs, checkboxes e dropdowns, pensando nos diferentes estados de interação e no feedback para o usuário. 📝 #UIDesign #FormDesign #DesignDeInterfaces</pre>
+                                <button id="copy-button" title="Copiar texto"><i class="far fa-copy"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-main-content">
+                <div class="footer-brand">
+                    <a href="/" class="logo">30 Dias de UI</a>
+                    <p>Uma jornada diária para aprimorar suas habilidades em Design de Interfaces.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Navegação</h4>
+                        <ul>
+                            <li><a href="/index.html">Desafios</a></li>
+                            <li><a href="/comece-aqui.html">Comece por Aqui</a></li>
+                            <li><a href="/sobre.html">Sobre</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Me siga</h4>
+                        <ul>
+                            <li><a href="https://www.instagram.com/gui.uiux/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                            <li><a href="https://www.linkedin.com/in/guilherme-cr/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>Guilherme Rodrigues © 2025 | Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js" defer></script>
+</body>
+</html>

@@ -890,3 +890,57 @@ footer { text-align: center; padding: 40px 20px; color: var(--color-text-seconda
 .desafio-header{
     margin-bottom: 0px !important;
 }
+/* --- ESTILOS APRIMORADOS PARA O CHECKLIST DO DESAFIO --- */
+
+/* O container do checklist ganha um novo visual */
+.task-reference {
+    margin-top: 30px;
+    padding: 24px; /* Mais respiro interno */
+    border: 1px solid var(--color-border);
+    background-color: var(--color-bg); /* Cor de fundo um pouco diferente */
+    border-radius: 12px;
+}
+
+/* Título do checklist */
+.task-reference h4 {
+    font-size: 1.2rem;
+    color: var(--color-text-primary); /* Mais destaque que o texto comum */
+    margin-bottom: 20px;
+}
+
+/* A lista ordenada (OL) - aqui removemos os estilos padrão */
+.task-reference ol {
+    list-style: none; /* Remove os números 1, 2, 3 padrão */
+    padding-left: 0;  /* Remove o recuo padrão do navegador */
+    counter-reset: checklist-counter; /* Inicia nosso contador customizado */
+}
+
+/* Cada item da lista (LI) */
+.task-reference li {
+    position: relative; /* Necessário para posicionar o número customizado */
+    padding-left: 40px; /* Cria espaço à esquerda para o nosso número */
+    margin-bottom: 16px; /* Espaço entre os itens */
+    font-size: 1.05rem; /* Um pouco maior para facilitar a leitura */
+    color: var(--color-text-secondary);
+}
+
+/* O número customizado (a "bolinha" azul) */
+.task-reference li::before {
+    counter-increment: checklist-counter; /* A cada item, soma +1 no contador */
+    content: counter(checklist-counter);  /* Exibe o número do contador */
+    
+    /* Estilos da bolinha */
+    position: absolute;
+    left: 0;
+    top: -2px; /* Ajuste fino vertical */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
