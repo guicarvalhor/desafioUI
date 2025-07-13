@@ -944,3 +944,28 @@ footer { text-align: center; padding: 40px 20px; color: var(--color-text-seconda
     font-weight: 700;
     font-size: 0.9rem;
 }
+
+/* --- ESTILO PARA A CAIXA DE MARCO/INCENTIVO --- */
+.milestone-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    background-color: color-mix(in srgb, var(--primary-color), transparent 90%);
+    border: 1px solid color-mix(in srgb, var(--primary-color), transparent 80%);
+    border-radius: 12px;
+    padding: 25px;
+    margin: 20px 0 40px 0;
+}
+.milestone-icon {
+    font-size: 2.5rem;
+}
+.milestone-text h3 {
+    color: var(--color-text-primary);
+    margin-bottom: 8px;
+    font-size: 1.3rem;
+}
+.milestone-text p {
+    color: var(--color-text-secondary);
+    line-height: 1.7;
+    margin: 0;
+}
