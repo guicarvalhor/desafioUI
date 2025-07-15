@@ -1,16 +1,18 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Lógica do Menu Hambúrguer
-    const navToggle = document.querySelector('.nav-toggle');
-    const navLinks = document.querySelector('.nav-links');
 
-    if (navToggle) {
-        navToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            const icon = navToggle.querySelector('i');
-            icon.classList.toggle('fa-bars');
-            icon.classList.toggle('fa-times');
-        });
-    }
+// Lógica do Menu Hambúrguer (ATUALIZADA)
+const navToggle = document.querySelector('.nav-toggle');
+const mainNav = document.querySelector('.main-nav'); // Agora pegamos o .main-nav
+
+if (navToggle && mainNav) { // Verificamos se ambos existem
+    navToggle.addEventListener('click', () => {
+        mainNav.classList.toggle('active'); // Adiciona/remove a classe no .main-nav
+        
+        const icon = navToggle.querySelector('i');
+        icon.classList.toggle('fa-bars');
+        icon.classList.toggle('fa-times');
+    });
+}
 
     // Lógica do Seletor de Tema
     const themeToggle = document.getElementById('theme-toggle');

@@ -1001,3 +1001,110 @@ footer { text-align: center; padding: 40px 20px; color: var(--color-text-seconda
 .challenge-level ol {
     margin-top: 16px;
 }
+
+/* --- ESTILOS PARA O CABEÇALHO ATUALIZADO (ORDEM CORRETA) --- */
+
+/* Container principal do header */
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Logo com imagem */
+.logo-link {
+    line-height: 0; /* Remove espaço extra da imagem */
+}
+.logo-image {
+    height: 40px; /* Ajuste a altura do seu logo conforme necessário */
+    width: auto;
+}
+
+/* Container da navegação à direita */
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+/* Links do menu */
+.nav-links {
+    display: flex;
+    gap: 24px;
+}
+
+/* Botão da comunidade */
+.community-button {
+    background-color: #25D366;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    white-space: nowrap;
+}
+.community-button:hover {
+    background-color: #1DAE51;
+    transform: translateY(-2px);
+}
+.community-button i {
+    font-size: 1.2rem;
+}
+
+/* --- RESPONSIVIDADE DO NOVO HEADER --- */
+
+/* Oculta o botão hambúrguer no desktop */
+.nav-toggle {
+    display: none; 
+    z-index: 1001; /* Garante que fique clicável */
+}
+
+@media (max-width: 992px) {
+    /* Mostra o botão hambúrguer */
+    .nav-toggle {
+        display: block;
+    }
+
+    /* Transforma a .main-nav no menu lateral que desliza */
+    .main-nav {
+        position: fixed;
+        top: 0;
+        right: -100%; /* Começa fora da tela */
+        width: 300px; /* Largura do menu lateral */
+        height: 100vh;
+        background-color: var(--color-surface);
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 100px 30px 30px 30px;
+        gap: 30px;
+        transition: right 0.4s ease-in-out;
+        border-left: 1px solid var(--color-border);
+    }
+
+    /* Classe .active (adicionada via JS) mostra o menu */
+    .main-nav.active {
+        right: 0;
+    }
+
+    /* Ajusta os itens dentro do menu mobile */
+    .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        width: 100%;
+    }
+    .nav-links a {
+        font-size: 1.2rem;
+    }
+}
+/* --- AJUSTE DA COR DO LOGO PARA O TEMA ESCURO --- */
+/* Usamos [data-theme='dark'] que seleciona o atributo na tag <html> */
+[data-theme='dark'] .logo-image {
+    filter: brightness(0) invert(1); /* Torna a imagem azul em branca */
+}
