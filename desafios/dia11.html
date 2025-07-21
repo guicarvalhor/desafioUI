@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia 11: Listas e Itens Repetitivos - 30 Dias de UI</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3WE0T6P6NG"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-3WE0T6P6NG');
+    </script>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <a href="../index.html" class="logo-link"><img src="/imagens/logo.png" alt="Logo do 30 Dias de UI" class="logo-image"></a>
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="../index.html">Desafios</a></li>
+                    <li><a href="../comece-a-qui.html">Comece por Aqui</a></li>
+                    <li><a href="../sobre.html">Sobre</a></li>
+                </ul>
+                <div class="theme-switcher">
+                    <input type="checkbox" id="theme-toggle" class="visually-hidden">
+                    <label for="theme-toggle" class="slider"><span class="visually-hidden">Mudar tema</span></label>
+                </div>
+                <a href="https://chat.whatsapp.com/JHP6GaSAny85Hl5dnGBant" target="_blank" rel="noopener noreferrer" class="community-button"><i class="fab fa-whatsapp"></i><span>Comunidade</span></a>
+            </nav>
+            <button class="nav-toggle" aria-label="abrir menu"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <main>
+        <section class="content-page">
+            <div class="container">
+                <a href="../index.html" class="back-link">← Voltar para todos os desafios</a>
+                <h1>Dia 11: Listas e itens repetitivos</h1>
+                <p class="subtitle">Como exibir uma coleção de dados de forma clara, escaneável e consistente. Hoje vamos projetar o "molde" para seus conteúdos.</p>
+                
+                <div class="challenge-content">
+                    <h2>O poder da consistência</h2>
+                    <p>Quando um usuário vê uma lista, seja de e-mails, contatos ou músicas, o cérebro dele espera que cada item siga o mesmo padrão visual. Essa consistência torna a informação previsível e muito mais fácil de processar. O objetivo do design de listas é criar um "molde" (componente) de item que funcione perfeitamente, não importa quantas vezes ele seja repetido.</p>
+
+                    <h2>A anatomia de um item de lista</h2>
+                    <p>A maioria dos itens de lista em interfaces modernas compartilha uma estrutura similar, que pode ser adaptada para diferentes necessidades. Os elementos mais comuns são:</p>
+                    <ul>
+                        <li><strong>Ícone ou Avatar:</strong> Um identificador visual rápido (a foto de um contato, o ícone de um tipo de arquivo).</li>
+                        <li><strong>Linha Principal (Título):</strong> A informação mais importante que define o item (o nome da pessoa, o título da notícia).</li>
+                        <li><strong>Linha Secundária (Metadado):</strong> Informação de apoio que dá contexto (o cargo da pessoa, a data da mensagem).</li>
+                        <li><strong>Ação (Opcional):</strong> Um botão ou ícone para uma ação rápida (ex: um ícone de "três pontinhos" para mais opções).</li>
+                        <li><strong>Divisórias:</strong> Uma linha fina que separa visualmente um item do outro, crucial para a clareza em listas densas.</li>
+                    </ul>
+
+                    <img src="/imagens/dia11/Dia11.png" alt="Diagrama mostrando as partes de um item de lista" class="content-image">
+
+                    <h2>Densidade: listas compactas vs. confortáveis</h2>
+                    <p>Nem toda lista é igual. A quantidade de espaço que você usa define a "densidade" da informação e a sensação que ela passa.</p>
+                    <ul>
+                        <li><strong>Listas Compactas:</strong> Usam menos espaçamento. São ideais para dashboards e ferramentas onde o usuário precisa ver muitos dados de uma vez (ex: lista de e-mails no Gmail).</li>
+                        <li><strong>Listas Confortáveis:</strong> Usam mais espaço em branco. São perfeitas para aplicativos de conteúdo onde a legibilidade e um ritmo de leitura mais calmo são importantes (ex: um feed de notícias).</li>
+                    </ul>
+
+                    <div class="challenge-task enhanced-task">
+                        <div class="task-header">
+                            <i class="fas fa-list-ul"></i>
+                            <h2>Seu desafio de hoje: o mestre dos moldes</h2>
+                        </div>
+                        <p>Sua missão hoje é projetar um componente de item de lista para dois cenários diferentes, mostrando sua capacidade de adaptação.</p>
+                        
+                        <div class="task-reference">
+                            <h4>Checklist do desafio:</h4>
+                            <ol>
+                                <li>Desenhe um item para uma <b>lista de contatos</b> de celular. Ele deve conter: Avatar (foto), Nome do Contato e o Número de telefone.</li>
+                                <li>Desenhe um item para um <b>"feed de atividades"</b> de um aplicativo. Ele deve conter: Ícone da atividade (ex: comentário), Texto da atividade (ex: "Mariana respondeu ao seu comentário") e a Data/hora (ex: "Há 5 minutos").</li>
+                                <li>Use os componentes que você criou para montar uma pequena lista com 3 a 4 itens em cada um dos cenários, prestando atenção nas divisórias e no espaçamento consistente entre eles.</li>
+                            </ol>
+                        </div>
+    
+                        <div class="task-share">
+                            <h4>Concluiu? Mostre sua consistência!</h4>
+                            <p>Projetar componentes de lista mostra que você pensa de forma escalável e organizada.</p>
+                            <div class="share-box">
+                                <pre id="share-text">Dia 11 do #Desafio30diasUI! O foco de hoje foi em Listas e Itens Repetitivos. Criei componentes para uma lista de contatos e um feed de atividades. É um ótimo exercício para pensar em consistência e componentização. 📝 #UIDesign #UIChallenge #ComponentDesign #DesignDeInterfaces</pre>
+                                <button id="copy-button" title="Copiar texto"><i class="far fa-copy"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-main-content">
+                <div class="footer-brand"><a href="/" class="logo">30 Dias de UI</a><p>Uma jornada diária para aprimorar suas habilidades em Design de Interfaces.</p></div>
+                <div class="footer-links">
+                    <div class="footer-column"><h4>Navegação</h4><ul><li><a href="/index.html">Desafios</a></li><li><a href="/comece-a-qui.html">Comece por Aqui</a></li><li><a href="/sobre.html">Sobre</a></li></ul></div>
+                    <div class="footer-column"><h4>Me siga</h4><ul><li><a href="https://www.instagram.com/gui.uiux/" target="_blank" rel="noopener noreferrer">Instagram</a></li><li><a href="https://www.linkedin.com/in/guilherme-cr/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li></ul></div>
+                </div>
+            </div>
+            <div class="footer-copyright"><p>Guilherme Rodrigues © 2025 | Todos os direitos reservados.</p></div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia 10: Breadcrumbs e Navegação Secundária - 30 Dias de UI</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3WE0T6P6NG"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-3WE0T6P6NG');
+    </script>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <a href="../index.html" class="logo-link"><img src="/imagens/logo.png" alt="Logo do 30 Dias de UI" class="logo-image"></a>
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="../index.html">Desafios</a></li>
+                    <li><a href="../comece-aqui.html">Comece por Aqui</a></li>
+                    <li><a href="../sobre.html">Sobre</a></li>
+                </ul>
+                <div class="theme-switcher">
+                    <input type="checkbox" id="theme-toggle" class="visually-hidden">
+                    <label for="theme-toggle" class="slider"><span class="visually-hidden">Mudar tema</span></label>
+                </div>
+                <a href="https://chat.whatsapp.com/JHP6GaSAny85Hl5dnGBant" target="_blank" rel="noopener noreferrer" class="community-button"><i class="fab fa-whatsapp"></i><span>Comunidade</span></a>
+            </nav>
+            <button class="nav-toggle" aria-label="abrir menu"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <main>
+        <section class="content-page">
+            <div class="container">
+                <a href="../index.html" class="back-link">← Voltar para todos os desafios</a>
+                <h1>Dia 10: Breadcrumbs e navegação secundária</h1>
+                <p class="subtitle">Não deixe seu usuário perdido! Aprenda a usar "migalhas de pão" para sinalizar a localização e a hierarquia do seu site.</p>
+                
+                <div class="challenge-content">
+                    <h2>O que são breadcrumbs? (E não, não é de comer)</h2>
+                    <p>Inspirado no conto de "João e Maria" (Hansel and Gretel), um breadcrumb é uma "trilha de migalhas de pão" que mostra o caminho que o usuário fez (ou a hierarquia da página atual). É um pequeno menu de texto, geralmente no topo da página, que responde a duas perguntas cruciais para o usuário: "Onde eu estou agora?" e "Como eu posso voltar?".</p>
+                    <p>Eles são fundamentais em sites com muitas páginas e níveis de profundidade, como e-commerces, blogs com muitas categorias ou sistemas complexos.</p>
+                    
+                    <img src="/imagens/dia10/Dia10.png" alt="Exemplo de um componente de breadcrumb" class="content-image">
+
+                    <h2>Além dos breadcrumbs: outros tipos de navegação secundária</h2>
+                    <p>A navegação secundária ajuda o usuário a se mover entre páginas de um mesmo nível hierárquico. Além dos breadcrumbs, existem outros padrões muito comuns:</p>
+                    <ul>
+                        <li><strong>Menu lateral (Side nav):</strong> Muito usado em painéis de controle (dashboards) e páginas de "Configurações". Permite que o usuário navegue entre diferentes seções de uma mesma área principal.</li>
+                        <img src="/imagens/dia10/nav.png" alt="Exemplo de um componente de nav" class="content-image">
+                        <li><strong>Abas (Tabs):</strong> Perfeitas para organizar conteúdo dentro de uma única página. O usuário pode alternar entre diferentes visualizações sem sair do contexto atual.</li>
+                        <img src="/imagens/dia10/tab.png" alt="Exemplo de um componente de tab" class="content-image">
+                    </ul>
+                    <div class="challenge-task enhanced-task">
+                        <div class="task-header">
+                            <i class="fas fa-map-signs"></i>
+                            <h2>Seu desafio de hoje: o guia do usuário</h2>
+                        </div>
+                        <p>Sua missão é projetar dois tipos diferentes de navegação secundária para um site fictício de e-commerce de eletrônicos.</p>
+                        
+                        <div class="task-reference">
+                            <h4>Checklist do desafio:</h4>
+                            <ol>
+                                <li>Desenhe um componente de <b>Breadcrumb</b> para a página de um produto. O caminho deve ter pelo menos 4 níveis (ex: `Início > Computadores > Notebooks > SuperBook Pro 14"`).</li>
+                                <li>Desenhe um <b>Menu Lateral</b>para a página de "Minha Conta", com links para seções como "Meus Pedidos", "Endereços", "Pagamentos" e "Segurança".</li>
+                                <li><b>Dica de mestre</b> Em ambos os componentes, garanta que o link da página atual esteja visualmente destacado (com uma cor diferente ou peso de fonte maior).</li>
+                            </ol>
+                        </div>
+    
+                        <div class="task-share">
+                            <h4>Concluiu? Mostre o caminho!</h4>
+                            <p>Projetar uma boa navegação mostra que você se preocupa com a usabilidade e a arquitetura da informação.</p>
+                            <div class="share-box">
+                                <pre id="share-text">Dia 10 do #Desafio30diasUI concluído! Hoje o foco foi em navegação secundária. Criei componentes de Breadcrumb e Menu Lateral para ajudar o usuário a nunca se perder no site. 🗺️ #UIDesign #UIChallenge #InformationArchitecture #DesignDeInterfaces</pre>
+                                <button id="copy-button" title="Copiar texto"><i class="far fa-copy"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-main-content">
+                <div class="footer-brand"><a href="/" class="logo">30 Dias de UI</a><p>Uma jornada diária para aprimorar suas habilidades em Design de Interfaces.</p></div>
+                <div class="footer-links">
+                    <div class="footer-column"><h4>Navegação</h4><ul><li><a href="/index.html">Desafios</a></li><li><a href="/comece-aqui.html">Comece por Aqui</a></li><li><a href="/sobre.html">Sobre</a></li></ul></div>
+                    <div class="footer-column"><h4>Me siga</h4><ul><li><a href="https://www.instagram.com/gui.uiux/" target="_blank" rel="noopener noreferrer">Instagram</a></li><li><a href="https://www.linkedin.com/in/guilherme-cr/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li></ul></div>
+                </div>
+            </div>
+            <div class="footer-copyright"><p>Guilherme Rodrigues © 2025 | Todos os direitos reservados.</p></div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js" defer></script>
+</body>
+</html>

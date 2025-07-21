@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia 9: Navegação Responsiva - 30 Dias de UI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3WE0T6P6NG"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-3WE0T6P6NG');
+    </script>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <a href="../index.html" class="logo-link"><img src="/imagens/logo.png" alt="Logo do 30 Dias de UI" class="logo-image"></a>
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="../index.html">Desafios</a></li>
+                    <li><a href="../comece-aqui.html">Comece por Aqui</a></li>
+                    <li><a href="../sobre.html">Sobre</a></li>
+                </ul>
+                <div class="theme-switcher">
+                    <input type="checkbox" id="theme-toggle" class="visually-hidden">
+                    <label for="theme-toggle" class="slider"><span class="visually-hidden">Mudar tema</span></label>
+                </div>
+                <a href="https://chat.whatsapp.com/JHP6GaSAny85Hl5dnGBant" target="_blank" rel="noopener noreferrer" class="community-button"><i class="fab fa-whatsapp"></i><span>Comunidade</span></a>
+            </nav>
+            <button class="nav-toggle" aria-label="abrir menu"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <main>
+        <section class="content-page">
+            <div class="container">
+                <a href="../index.html" class="back-link">← Voltar para todos os desafios</a>
+                <h1>Dia 9: Navegação responsiva</h1>
+                <p class="subtitle">Um bom menu funciona em qualquer lugar. Aprenda a adaptar o cabeçalho do seu site para desktop, tablet e celular.</p>
+                
+                <div class="challenge-content">
+                    <h2>A experiência em cada tela</h2>
+                    <p>A navegação principal é o mapa do seu site. Em um desktop, temos muito espaço horizontal para exibir todos os links. Em um celular, o espaço é limitado e a interação é feita com o toque. Por isso, não podemos simplesmente "espremer" o menu do desktop no mobile. Precisamos repensar e adaptar a estrutura para cada contexto.</p>
+
+                    <h2>Os três estados da navegação</h2>
+                    <p>Para criar uma experiência consistente, geralmente projetamos a navegação para três "breakpoints" (pontos de quebra) principais:</p>
+                    <ul>
+                        <li><strong>Desktop (Telas > 1024px):</strong> A versão completa. Todos os links principais são visíveis em uma barra horizontal para acesso rápido.</li>
+                        <li><strong>Tablet (Telas ~768px):</strong> O ponto de transição. Muitas vezes, o texto de alguns botões é substituído por ícones, ou o menu de links já é agrupado sob um ícone "hambúrguer" (☰).</li>
+                        <li><strong>Mobile (Telas < 768px):</strong> O menu hambúrguer é essencial. Ao ser tocado, ele abre um menu lateral (drawer) ou uma sobreposição em tela cheia (overlay) com os links de navegação.</li>
+                    </ul>
+
+                    <img src="/imagens/dia9/Dia9.png" alt="Mesmo cabeçalho se adaptando para 3 tamanhos de tela" class="content-image">
+
+                    <h2>Vídeo para criar menus adaptativos</h2>
+                    <p>Aprenda a usar o poder do Auto Layout e das Variantes no Figma para criar um único componente de menu que se adapta a todas as telas.</p>
+
+                    <div class="video-container">
+                        <h3>Criando um Header Navigation Responsivo com Variáveis no Figma (Canal Eduardo Amaral)</h3>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/SlXhr_Wb74s?si=-fq1fLOSWy1PjYtz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    
+                    <div class="challenge-task enhanced-task">
+                        <div class="task-header">
+                            <i class="fas fa-mobile-alt"></i>
+                            <h2>Seu desafio de hoje: o menu que se transforma</h2>
+                        </div>
+                        <p>Usando o Figma, sua missão é projetar as **três versões** do cabeçalho que já implementamos em código para o nosso site de desafios.</p>
+                        
+                        <div class="task-reference">
+                            <h4>Checklist do desafio:</h4>
+                            <ol>
+                                <li>Crie uma variante para <b>Desktop</b> (largura de 1440px), com todos os elementos visíveis horizontalmente.</li>
+                                <li>Crie uma variante para <b>Tablet</b> (largura de 768px), onde o menu de links já foi substituído pelo ícone hambúrguer.</li>
+                                <li>Crie uma variante para <b>Mobile</b> (largura de 375px), mostrando o cabeçalho compacto e, ao lado, uma simulação de como o menu lateral apareceria ao ser aberto.</li>
+                            </ol>
+                        </div>
+    
+                        <div class="task-share">
+                            <h4>Concluiu? Mostre sua visão de multiplataforma!</h4>
+                            <p>Projetar para diferentes telas é uma habilidade essencial e muito valorizada no mercado.</p>
+                            <div class="share-box">
+                                <pre id="share-text">Desafio do Dia 9 do #Desafio30diasUI concluído! O objetivo foi projetar um menu de navegação responsivo para Desktop, Tablet e Mobile. Pensar em como os componentes se adaptam é um exercício incrível de arquitetura de UI. 📱 #UIDesign #UIChallenge #ResponsiveDesign #Figma</pre>
+                                <button id="copy-button" title="Copiar texto"><i class="far fa-copy"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-main-content">
+                <div class="footer-brand"><a href="/" class="logo">30 Dias de UI</a><p>Uma jornada diária para aprimorar suas habilidades em Design de Interfaces.</p></div>
+                <div class="footer-links">
+                    <div class="footer-column"><h4>Navegação</h4><ul><li><a href="/index.html">Desafios</a></li><li><a href="/comece-aqui.html">Comece por Aqui</a></li><li><a href="/sobre.html">Sobre</a></li></ul></div>
+                    <div class="footer-column"><h4>Me siga</h4><ul><li><a href="https://www.instagram.com/gui.uiux/" target="_blank" rel="noopener noreferrer">Instagram</a></li><li><a href="https://www.linkedin.com/in/guilherme-cr/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li></ul></div>
+                </div>
+            </div>
+            <div class="footer-copyright"><p>Guilherme Rodrigues © 2025 | Todos os direitos reservados.</p></div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js" defer></script>
+</body>
+</html>
