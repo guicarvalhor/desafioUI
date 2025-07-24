@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <title>Dia 13: Feedbacks de Sistema - 30 Dias de UI</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3WE0T6P6NG"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-3WE0T6P6NG');
+    </script>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <a href="../index.html" class="logo-link"><img src="/imagens/logo.png" alt="Logo do 30 Dias de UI" class="logo-image"></a>
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="../index.html">Desafios</a></li>
+                    <li><a href="../comece-a-qui.html">Comece por Aqui</a></li>
+                    <li><a href="../sobre.html">Sobre</a></li>
+                </ul>
+                <div class="theme-switcher">
+                    <input type="checkbox" id="theme-toggle" class="visually-hidden">
+                    <label for="theme-toggle" class="slider"><span class="visually-hidden">Mudar tema</span></label>
+                </div>
+                <a href="https://chat.whatsapp.com/JHP6GaSAny85Hl5dnGBant" target="_blank" rel="noopener noreferrer" class="community-button"><i class="fab fa-whatsapp"></i><span>Comunidade</span></a>
+            </nav>
+            <button class="nav-toggle" aria-label="abrir menu"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <main>
+        <section class="content-page">
+            <div class="container">
+                <a href="../index.html" class="back-link">← Voltar para todos os desafios</a>
+                <h1>Dia 13: Feedbacks de sistema</h1>
+                <p class="subtitle">Mantenha seu usuário informado! Aprenda a criar alertas, toasts e skeleton screens para uma comunicação clara e transparente.</p>
+                
+                <div class="challenge-content">
+                    <h2>Por que o sistema precisa 'conversar' com o usuário?</h2>
+                    <p>Imagine clicar em um botão de "comprar" e nada acontecer. Você clicou direito? A internet caiu? O site travou? A falta de feedback gera ansiedade e incerteza. Um bom sistema sempre responde, confirmando ações, alertando sobre erros ou mostrando que está trabalhando. Isso mantém o usuário calmo, confiante e no controle da situação.</p>
+
+                    <h2>As ferramentas da comunicação</h2>
+                    <p>Existem diferentes formas de dar feedback, cada uma adequada para um tipo de situação:</p>
+                    <ul>
+                        <li><strong>Alertas (ou Modais):</strong> São caixas de diálogo que <b>interrompem</b> o usuário para entregar uma mensagem crítica ou pedir uma confirmação importante. Devem ser usados com moderação. Ex: "Você tem certeza que quer deletar este item?".</li>
+                        <li><strong>Toasts (ou Snackbars):</strong> São pequenas notificações <b>não-intrusivas</b> que aparecem por alguns segundos (geralmente no canto da tela) e depois somem sozinhas. São perfeitas para confirmar ações bem-sucedidas. Ex: "Perfil salvo com sucesso!".</li>
+                        <li><strong>Skeleton screens (Telas de Esqueleto):</strong> É uma versão "esquelética" da interface, com caixas cinzas, mostrada enquanto o conteúdo real está carregando. Isso melhora a percepção de velocidade, pois o usuário já vê a estrutura da página se formando.</li>
+                    </ul>
+
+                    <img src="/imagens/dia13/dIa13.png" alt="Exemplos de componentes de feedback de sistema" class="content-image">
+
+                    <div class="challenge-task enhanced-task">
+                        <div class="task-header">
+                            <i class="fas fa-bullhorn"></i>
+                            <h2>Seu desafio de hoje: o porta-voz do sistema</h2>
+                        </div>
+                        <p>Sua missão é projetar os três tipos de feedback que aprendemos, cada um para uma situação específica, mostrando que você sabe se comunicar com o usuário.</p>
+                        
+                        <div class="task-reference">
+                            <h4>Checklist do desafio:</h4>
+                            <ol>
+                                <li>Desenhe um <b>Alerta</b> modal para uma ação perigosa, como "Excluir sua conta permanentemente?". Inclua um botão de ação destrutiva (vermelho) e um de "Cancelar".</li>
+                                <li>Desenhe um <b>Toast</b> de sucesso que apareceria após o usuário salvar as configurações do perfil.</li>
+                                <li>Desenhe a tela de um <b>Skeleton Screen</b> para o card de desafio da nossa página inicial, mostrando placeholders para a imagem, título e botões.</li>
+                            </ol>
+                        </div>
+    
+                        <div class="task-share">
+                            <h4>Concluiu? Mostre como seu design se comunica!</h4>
+                            <p>Um bom feedback é sinal de um design que se importa com o usuário. Mostre como você aplicou esse conceito.</p>
+                            <div class="share-box">
+                                <pre id="share-text">Dia 13 do #Desafio30diasUI! O desafio foi criar Feedbacks de Sistema. Projetei um Alerta, um Toast de sucesso e um Skeleton Screen. Manter o usuário informado é a chave para uma boa experiência! 📢 #UIDesign #UIChallenge #UX #DesignDeInterfaces</pre>
+                                <button id="copy-button" title="Copiar texto"><i class="far fa-copy"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-main-content">
+                <div class="footer-brand"><a href="/" class="logo">30 Dias de UI</a><p>Uma jornada diária para aprimorar suas habilidades em Design de Interfaces.</p></div>
+                <div class="footer-links">
+                    <div class="footer-column"><h4>Navegação</h4><ul><li><a href="/index.html">Desafios</a></li><li><a href="/comece-a-qui.html">Comece por Aqui</a></li><li><a href="/sobre.html">Sobre</a></li></ul></div>
+                    <div class="footer-column"><h4>Me siga</h4><ul><li><a href="https://www.instagram.com/gui.uiux/" target="_blank" rel="noopener noreferrer">Instagram</a></li><li><a href="https://www.linkedin.com/in/guilherme-cr/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li></ul></div>
+                </div>
+            </div>
+            <div class="footer-copyright"><p>Guilherme Rodrigues © 2025 | Todos os direitos reservados.</p></div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js" defer></script>
+</body>
+</html>

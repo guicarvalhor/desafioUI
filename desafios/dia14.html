@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dia 14: Revisão da Biblioteca de Componentes - 30 Dias de UI</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../style.css" />
+
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-3WE0T6P6NG"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-3WE0T6P6NG");
+    </script>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <a href="../index.html" class="logo-link"
+          ><img
+            src="/imagens/logo.png"
+            alt="Logo do 30 Dias de UI"
+            class="logo-image"
+        /></a>
+        <nav class="main-nav">
+          <ul class="nav-links">
+            <li><a href="../index.html">Desafios</a></li>
+            <li><a href="../comece-a-qui.html">Comece por Aqui</a></li>
+            <li><a href="../sobre.html">Sobre</a></li>
+          </ul>
+          <div class="theme-switcher">
+            <input type="checkbox" id="theme-toggle" class="visually-hidden" />
+            <label for="theme-toggle" class="slider"
+              ><span class="visually-hidden">Mudar tema</span></label
+            >
+          </div>
+          <a
+            href="https://chat.whatsapp.com/JHP6GaSAny85Hl5dnGBant"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="community-button"
+            ><i class="fab fa-whatsapp"></i><span>Comunidade</span></a
+          >
+        </nav>
+        <button class="nav-toggle" aria-label="abrir menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="content-page">
+        <div class="container">
+          <a href="../index.html" class="back-link"
+            >← Voltar para todos os desafios</a
+          >
+          <h1>Dia 14: Revisão da sua biblioteca de componentes</h1>
+          <p class="subtitle">
+            Parabéns por concluir a Semana 2! Hoje vamos organizar nossas
+            criações e consolidar a base do seu Design System.
+          </p>
+
+          <div class="challenge-content">
+            <div class="milestone-box">
+              <div class="milestone-icon">🏆</div>
+              <div class="milestone-text">
+                <h3>Você construiu o esqueleto de uma interface real!</h3>
+                <p>
+                  Se na primeira semana você aprendeu a fazer os tijolos, nesta
+                  segunda semana você construiu as paredes. Cada componente
+                  criado é uma peça fundamental, e agora você tem uma coleção
+                  pronta para montar telas complexas. O mais difícil já passou,
+                  continue com essa força!
+                </p>
+              </div>
+            </div>
+
+            <h2>O que é uma biblioteca de componentes?</h2>
+            <p>
+              Uma biblioteca de componentes é uma coleção centralizada e
+              organizada de todos os elementos de UI reutilizáveis de um
+              projeto. É a evolução natural do guia de estilos que fizemos no
+              Dia 7. Em vez de ter apenas os estilos (cores, fontes), agora
+              temos os <b>componentes funcionais</b> (botões, cards, inputs) que
+              usam esses estilos.
+            </p>
+            <p>
+              Manter essa biblioteca organizada no Figma é uma das tarefas mais
+              importantes de um UI Designer, pois garante consistência e agiliza
+              imensamente o trabalho de criação de novas telas.
+            </p>
+
+            <img
+              src="/imagens/dia14/dia14-ds.png"
+              alt="Exemplo de uma biblioteca de componentes organizada no Figma"
+              class="content-image"
+            />
+
+            <h2>Indo além: dicas para uma biblioteca profissional</h2>
+            <p>
+              Os exemplos acima mostram como organizar os <b>componentes</b> que
+              criamos na Semana 2. No entanto, uma biblioteca de verdade é ainda
+              mais completa! O ideal é que você detalhe tudo, incluindo também
+              os <b>fundamentos</b> que definimos na Semana 1 (sua paleta de
+              cores, escala tipográfica e espaçamentos).
+            </p>
+
+            <div class="pro-tip-box">
+              <div class="pro-tip-icon">
+                <i class="fas fa-magic-wand-sparkles"></i>
+              </div>
+              <div class="pro-tip-content">
+                <h4>Dica de mestre: automatize seu guia de estilos</h4>
+                <p>
+                  Para uma melhor organização, considere separar seus
+                  fundamentos e componentes em <b>páginas diferentes</b> dentro
+                  do seu arquivo Figma.
+                </p>
+                <p>
+                  E para te ajudar a criar um Guia de Estilos (Style Guide) de
+                  forma rápida e profissional, existe um plugin fantástico
+                  chamado <b>Figr Identity</b>. Ele pode gerar automaticamente a
+                  documentação para os itens que você vê na imagem abaixo, desde que você crie as variáveis de estilo corretamente no Figma.
+                </p>
+              </div>
+            </div>
+
+            <img
+              src="/imagens/dia14/FIGR.png"
+              alt="Exemplo de guia de estilos gerado com o plugin Figr Identity"
+              class="content-image"
+            />
+            <div class="challenge-task enhanced-task">
+              <div class="task-header">
+                <i class="fas fa-archive"></i>
+                <h2>Seu desafio de hoje: o curador de UI</h2>
+              </div>
+              <p>
+                Sua missão é pegar todos os componentes que você criou ao longo
+                da Semana 2 (Dias 8 a 13) e organizá-los em uma única página no
+                Figma, criando sua primeira <b>Biblioteca de Componentes</b>.
+              </p>
+
+              <div class="task-reference">
+                <h4>Checklist do desafio:</h4>
+                <ol>
+                  <li>
+                    Crie uma nova página no seu arquivo Figma chamada
+                    <b>"Biblioteca de Componentes"</b>.
+                  </li>
+                  <li>
+                    Copie e cole uma versão de cada componente que você criou:
+                    Cards, Navegação, Breadcrumbs, Listas, Tabs, Acordeões e
+                    Feedbacks.
+                  </li>
+                  <li>
+                    Organize-os em seções com títulos (ex: "Cards", "Navegação",
+                    "Feedbacks").
+                  </li>
+                  <li>
+                    <b>(Bônus de Mestre)</b> Se ainda não fez, transforme cada
+                    item em um Componente principal no Figma (clicando com o
+                    botão direito -> "Create component").
+                  </li>
+                </ol>
+              </div>
+
+              <div class="task-share">
+                <h4>Concluiu a Semana 2? Compartilhe sua biblioteca!</h4>
+                <p>
+                  Mostrar sua capacidade de organização e pensamento sistêmico é
+                  um grande diferencial.
+                </p>
+                <div class="share-box">
+                  <pre id="share-text">
+Semana 2 do #Desafio30diasUI concluída! 🔥 Foram mais 7 dias construindo componentes essenciais. Para fechar, o desafio de hoje foi organizar tudo em uma Biblioteca de Componentes no Figma. Pronto para a Semana 3! #UIDesign #DesignSystem #Componentes</pre
+                  >
+                  <button id="copy-button" title="Copiar texto">
+                    <i class="far fa-copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-main-content">
+          <div class="footer-brand">
+            <a href="/" class="logo">30 Dias de UI</a>
+            <p>
+              Uma jornada diária para aprimorar suas habilidades em Design de
+              Interfaces.
+            </p>
+          </div>
+          <div class="footer-links">
+            <div class="footer-column">
+              <h4>Navegação</h4>
+              <ul>
+                <li><a href="/index.html">Desafios</a></li>
+                <li><a href="/comece-a-qui.html">Comece por Aqui</a></li>
+                <li><a href="/sobre.html">Sobre</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h4>Me siga</h4>
+              <ul>
+                <li>
+                  <a
+                    href="https://www.instagram.com/gui.uiux/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Instagram</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/guilherme-cr/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >LinkedIn</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <p>Guilherme Rodrigues © 2025 | Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/main.js" defer></script>
+  </body>
+</html>

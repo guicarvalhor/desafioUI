@@ -132,7 +132,7 @@ footer { text-align: center; padding: 40px 20px; color: var(--color-text-seconda
 @media (max-width: 768px) {
     .main-nav { gap: 15px; }
     .nav-toggle { display: block; }
-    .nav-links { position: fixed; top: var(--header-height); left: -100%; width: 100%; height: calc(100vh - var(--header-height)); background-color: var(--color-surface); flex-direction: column; align-items: center; gap: 0; padding: 40px 0; transition: left 0.4s ease-in-out; }
+    .nav-links {  top: var(--header-height); left: -100%; width: 100%; height: calc(100vh - var(--header-height)); background-color: var(--color-surface); flex-direction: column; align-items: center; gap: 0; padding: 40px 0; transition: left 0.4s ease-in-out; }
     .nav-links.active { left: 0; }
     .nav-links li { width: 100%; text-align: center; }
     .nav-links a { display: block; padding: 15px 0; width: 100%; font-size: 1.2rem; }
@@ -1107,4 +1107,36 @@ footer { text-align: center; padding: 40px 20px; color: var(--color-text-seconda
 /* Usamos [data-theme='dark'] que seleciona o atributo na tag <html> */
 [data-theme='dark'] .logo-image {
     filter: brightness(0) invert(1); /* Torna a imagem azul em branca */
+}
+/* --- ESTILO PARA A CAIXA DE DICA PROFISSIONAL --- */
+.pro-tip-box {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    background-color: color-mix(in srgb, var(--primary-color), transparent 92%);
+    border: 1px solid color-mix(in srgb, var(--primary-color), transparent 85%);
+    border-radius: 12px;
+    padding: 25px;
+    margin: 30px 0;
+}
+
+.pro-tip-icon {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-top: 5px;
+}
+
+.pro-tip-content h4 {
+    font-size: 1.3rem;
+    color: var(--color-text-primary);
+    margin-bottom: 8px;
+}
+
+.pro-tip-content p {
+    color: var(--color-text-secondary);
+    line-height: 1.7;
+    margin: 0;
+}
+.pro-tip-content p + p {
+    margin-top: 12px;
 }
