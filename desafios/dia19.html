@@ -2,14 +2,15 @@
 <html lang="pt-BR" data-theme="dark">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale-1.0">
-    <title>Dia 13: Feedbacks de Sistema - 30 Dias de UI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia 19: A Oferta (Planos e Preços) - 30 Dias de UI</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="../style.css">
+
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3WE0T6P6NG"></script>
@@ -24,7 +25,8 @@
 <body>
     <header class="main-header">
         <div class="container">
-            <a href="../index.html" class="logo-link"><img src="/imagens/logo.png" alt="Logo do 30 Dias de UI" class="logo-image"></a>
+            <a href="../index.html" class="logo-link"><img src="/imagens/logo.png" alt="Logo do 30 Dias de UI"
+                    class="logo-image"></a>
             <nav class="main-nav">
                 <ul class="nav-links">
                     <li><a href="../index.html">Desafios</a></li>
@@ -45,44 +47,49 @@
         <section class="content-page">
             <div class="container">
                 <a href="../index.html" class="back-link">← Voltar para todos os desafios</a>
-                <h1>Dia 13: Feedbacks de sistema</h1>
-                <p class="subtitle">Mantenha seu usuário informado! Aprenda a criar alertas, toasts e skeleton screens para uma comunicação clara e transparente.</p>
+                <h1>Dia 19: A oferta (planos e preços)</h1>
+                <p class="subtitle">Transformando valor em conversão. Aprenda a projetar tabelas de preço que sejam claras, comparativas e que ajudem o usuário a escolher.</p>
                 
                 <div class="challenge-content">
-                    <h2>Por que o sistema precisa 'conversar' com o usuário?</h2>
-                    <p>Imagine clicar em um botão de "comprar" e nada acontecer. Você clicou direito? A internet caiu? O site travou? A falta de feedback gera ansiedade e incerteza. Um bom sistema sempre responde, confirmando ações, alertando sobre erros ou mostrando que está trabalhando. Isso mantém o usuário calmo, confiante e no controle da situação.</p>
+                    <h2>A psicologia por trás dos preços</h2>
+                    <p>Uma tabela de preços é uma ferramenta de persuasão. Mais do que apenas listar valores, ela deve guiar o usuário para a melhor escolha. Um truque comum é o <b>efeito de ancoragem</b>: destacar um plano como <b>"Mais Popular"</b> ou <b>"Recomendado"</b>. Isso simplifica a decisão do usuário, que tende a seguir a sugestão, e cria um ponto de foco visual na sua interface.</p>
 
-                    <h2>As ferramentas da comunicação</h2>
-                    <p>Existem diferentes formas de dar feedback, cada uma adequada para um tipo de situação:</p>
+                    <h2>Anatomia de uma tabela de preços eficaz</h2>
+                    <p>Para que uma tabela de preços funcione, cada plano deve ser apresentado em um card claro e comparável. Os elementos essenciais são:</p>
                     <ul>
-                        <li><strong>Alertas (ou Modais):</strong> São caixas de diálogo que <b>interrompem</b> o usuário para entregar uma mensagem crítica ou pedir uma confirmação importante. Devem ser usados com moderação. Ex: "Você tem certeza que quer deletar este item?".</li>
-                        <li><strong>Toasts (ou Snackbars):</strong> São pequenas notificações <b>não-intrusivas</b> que aparecem por alguns segundos (geralmente no canto da tela) e depois somem sozinhas. São perfeitas para confirmar ações bem-sucedidas. Ex: "Perfil salvo com sucesso!".</li>
-                        <li><strong>Skeleton screens (Telas de Esqueleto):</strong> É uma versão "esquelética" da interface, com caixas cinzas, mostrada enquanto o conteúdo real está carregando. Isso melhora a percepção de velocidade, pois o usuário já vê a estrutura da página se formando.</li>
+                        <li><b>Nome do plano:</b> Um título claro (ex: Básico, Profissional, Empresa).</li>
+                        <li><b>Preço:</b> O elemento com maior destaque visual.</li>
+                        <li><b>Público-alvo:</b> Uma linha curta que ajuda o usuário a se identificar (ex: "Ideal para freelancers").</li>
+                        <li><b>Lista de benefícios:</b> O que o plano inclui. Use ícones de checkmark (✓) para facilitar a leitura.</li>
+                        <li><b>Botão de CTA:</b> Uma chamada para ação clara (ex: "Assine Agora"). O botão do plano em destaque deve ser um botão primário.</li>
                     </ul>
 
-                    <img src="/imagens/dia13/dIa13.png" alt="Exemplos de componentes de feedback de sistema" class="content-image">
+                    <img src="/imagens/dia19/Planos.png" alt="Três cards de preço, com o do meio destacado como 'Mais Popular'" class="content-image">
 
+                    
                     <div class="challenge-task enhanced-task">
                         <div class="task-header">
-                            <i class="fas fa-bullhorn"></i>
-                            <h2>Seu desafio de hoje: o porta-voz do sistema</h2>
+                            <i class="fas fa-dollar-sign"></i>
+                            <h2>Seu desafio de hoje: a oferta irrecusável</h2>
                         </div>
-                        <p>Sua missão é projetar os três tipos de feedback que aprendemos, cada um para uma situação específica, mostrando que você sabe se comunicar com o usuário.</p>
+                        <p>Sua missão é projetar a seção de <b>Planos e Preços</b> para a sua landing page, aplicando princípios de psicologia de design para guiar a decisão do usuário.</p>
                         
                         <div class="task-reference">
                             <h4>Checklist do desafio:</h4>
                             <ol>
-                                <li>Desenhe um <b>Alerta</b> modal para uma ação perigosa, como "Excluir sua conta permanentemente?". Inclua um botão de ação destrutiva (vermelho) e um de "Cancelar".</li>
-                                <li>Desenhe um <b>Toast</b> de sucesso que apareceria após o usuário salvar as configurações do perfil.</li>
-                                <li>Desenhe a tela de um <b>Skeleton Screen</b> para o card de desafio da nossa página inicial, mostrando placeholders para a imagem, título e botões.</li>
+                                <li>Crie uma seção com <b>2 ou 3 planos</b> para o seu produto/serviço do Dia 15.</li>
+                                <li>Para cada plano, defina um nome, um preço, um público-alvo e uma pequena lista de benefícios.</li>
+                                <li>Destaque visualmente um dos planos como a opção <b>"Mais Popular"</b> ou <b>"Recomendada"</b>.</li>
+                                <li>Use um botão <b>primário</b> para o plano recomendado e botões <b>secundários</b> para os outros.</li>
+                                <li><b>Conecte ao seu Design System:</b> Aplique consistentemente a paleta de cores, a tipografia e os espaçamentos que você já definiu.</li>
                             </ol>
                         </div>
     
                         <div class="task-share">
-                            <h4>Concluiu? Mostre como seu design se comunica!</h4>
-                            <p>Um bom feedback é sinal de um design que se importa com o usuário. Mostre como você aplicou esse conceito.</p>
+                            <h4>Concluiu? Mostre como você vende seu peixe!</h4>
+                            <p>Uma boa página de preços é fundamental para qualquer negócio. Mostre como você estruturou a sua.</p>
                             <div class="share-box">
-                                <pre id="share-text">Dia 13 do #Desafio30diasUI! O desafio foi criar Feedbacks de Sistema. Projetei um Alerta, um Toast de sucesso e um Skeleton Screen. Manter o usuário informado é a chave para uma boa experiência! 📢 #UIDesign #UIChallenge #UX #DesignDeInterfaces</pre>
+                                <pre id="share-text">Dando continuidade ao meu projeto de Landing Page no #Desafio30diasUI! No Dia 19, o foco foi a seção de Planos e Preços. Usei o efeito de ancoragem para destacar o plano mais popular. 💰 #UIDesign #UIChallenge #Pricing #DesignDeInterfaces</pre>
                                 <button id="copy-button" title="Copiar texto"><i class="far fa-copy"></i></button>
                             </div>
                         </div>

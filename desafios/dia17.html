@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale-1.0">
-    <title>Dia 13: Feedbacks de Sistema - 30 Dias de UI</title>
+    <title>Dia 17: A Prova Social - 30 Dias de UI</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="../style.css">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3WE0T6P6NG"></script>
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3WE0T6P6NG"></script>
@@ -24,7 +26,7 @@
 <body>
     <header class="main-header">
         <div class="container">
-            <a href="../index.html" class="logo-link"><img src="/imagens/logo.png" alt="Logo do 30 Dias de UI" class="logo-image"></a>
+             <a href="../index.html" class="logo-link"><img src="/imagens/logo.png" alt="Logo do 30 Dias de UI" class="logo-image"></a>
             <nav class="main-nav">
                 <ul class="nav-links">
                     <li><a href="../index.html">Desafios</a></li>
@@ -45,44 +47,47 @@
         <section class="content-page">
             <div class="container">
                 <a href="../index.html" class="back-link">← Voltar para todos os desafios</a>
-                <h1>Dia 13: Feedbacks de sistema</h1>
-                <p class="subtitle">Mantenha seu usuário informado! Aprenda a criar alertas, toasts e skeleton screens para uma comunicação clara e transparente.</p>
+                <h1>Dia 17: Os depoimentos</h1>
+                <p class="subtitle">Deixe que seus clientes satisfeitos falem por você. Aprenda a projetar uma seção de depoimentos que gera confiança e credibilidade.</p>
                 
                 <div class="challenge-content">
-                    <h2>Por que o sistema precisa 'conversar' com o usuário?</h2>
-                    <p>Imagine clicar em um botão de "comprar" e nada acontecer. Você clicou direito? A internet caiu? O site travou? A falta de feedback gera ansiedade e incerteza. Um bom sistema sempre responde, confirmando ações, alertando sobre erros ou mostrando que está trabalhando. Isso mantém o usuário calmo, confiante e no controle da situação.</p>
+                    <h2>Por que a opinião dos outros importa tanto?</h2>
+                    <p>A prova social é um princípio psicológico poderoso: quando estamos incertos, tendemos a olhar para o que os outros estão fazendo para guiar nossas próprias decisões. É por isso que escolhemos um restaurante cheio em vez de um vazio, ou lemos dezenas de avaliações antes de comprar um produto online. Em uma landing page, depoimentos de clientes, estudos de caso e logos de empresas parceiras servem como um forte sinal de confiança e qualidade.</p>
 
-                    <h2>As ferramentas da comunicação</h2>
-                    <p>Existem diferentes formas de dar feedback, cada uma adequada para um tipo de situação:</p>
+                    <h2>Anatomia de um depoimento eficaz</h2>
+                    <p>Um bom depoimento vai além de um simples texto. Para que ele pareça autêntico e gere credibilidade, ele deve conter alguns elementos-chave:</p>
                     <ul>
-                        <li><strong>Alertas (ou Modais):</strong> São caixas de diálogo que <b>interrompem</b> o usuário para entregar uma mensagem crítica ou pedir uma confirmação importante. Devem ser usados com moderação. Ex: "Você tem certeza que quer deletar este item?".</li>
-                        <li><strong>Toasts (ou Snackbars):</strong> São pequenas notificações <b>não-intrusivas</b> que aparecem por alguns segundos (geralmente no canto da tela) e depois somem sozinhas. São perfeitas para confirmar ações bem-sucedidas. Ex: "Perfil salvo com sucesso!".</li>
-                        <li><strong>Skeleton screens (Telas de Esqueleto):</strong> É uma versão "esquelética" da interface, com caixas cinzas, mostrada enquanto o conteúdo real está carregando. Isso melhora a percepção de velocidade, pois o usuário já vê a estrutura da página se formando.</li>
+                        <li><b>Foto da pessoa:</b> Humaniza o depoimento e o torna muito mais real.</li>
+                        <li><b>Nome e cargo/empresa:</b> Adiciona um selo de autoridade e contexto, sempre que aplicável.</li>
+                        <li><b>O depoimento em si:</b> O ideal é que o texto seja específico e foque nos benefícios e resultados obtidos.</li>
+                        <li><b>Avaliação por estrelas:</b> Um indicador visual rápido que resume a satisfação do cliente.</li>
                     </ul>
 
-                    <img src="/imagens/dia13/dIa13.png" alt="Exemplos de componentes de feedback de sistema" class="content-image">
-
+                    <img src="/imagens/dia17/exemplo-dia17.png" alt="Estrutura de um card de depoimento com foto, nome, texto e estrelas" class="content-image">
+                    
+                                   
                     <div class="challenge-task enhanced-task">
                         <div class="task-header">
-                            <i class="fas fa-bullhorn"></i>
-                            <h2>Seu desafio de hoje: o porta-voz do sistema</h2>
+                            <i class="fas fa-comments"></i>
+                            <h2>Seu desafio de hoje: a voz do cliente</h2>
                         </div>
-                        <p>Sua missão é projetar os três tipos de feedback que aprendemos, cada um para uma situação específica, mostrando que você sabe se comunicar com o usuário.</p>
+                        <p>Sua missão é construir a seção de <b>Prova Social</b> para a sua landing page, projetando um componente de depoimento que inspire confiança e valide a sua proposta de valor.</p>
                         
                         <div class="task-reference">
                             <h4>Checklist do desafio:</h4>
                             <ol>
-                                <li>Desenhe um <b>Alerta</b> modal para uma ação perigosa, como "Excluir sua conta permanentemente?". Inclua um botão de ação destrutiva (vermelho) e um de "Cancelar".</li>
-                                <li>Desenhe um <b>Toast</b> de sucesso que apareceria após o usuário salvar as configurações do perfil.</li>
-                                <li>Desenhe a tela de um <b>Skeleton Screen</b> para o card de desafio da nossa página inicial, mostrando placeholders para a imagem, título e botões.</li>
+                                <li>Crie um <b>componente de card de depoimento</b>. Ele deve incluir espaço para a foto, nome, cargo/empresa, a citação e uma avaliação de 5 estrelas.</li>
+                                <li>Escreva 2 ou 3 depoimentos fictícios que um cliente do seu produto/serviço (definido no Dia 15) escreveria.</li>
+                                <li>Monte a seção completa na sua landing page, organizando os cards de depoimento em um layout limpo e atraente (ex: um grid com 2 ou 3 colunas).</li>
+                                <li><b>Conecte ao seu Design System:</b> Utilize a tipografia, cores e espaçamentos que você já definiu para manter a consistência visual.</li>
                             </ol>
                         </div>
     
                         <div class="task-share">
-                            <h4>Concluiu? Mostre como seu design se comunica!</h4>
-                            <p>Um bom feedback é sinal de um design que se importa com o usuário. Mostre como você aplicou esse conceito.</p>
+                            <h4>Concluiu? Mostre que seu design é de confiança!</h4>
+                            <p>Uma boa seção de prova social pode ser o fator decisivo para um usuário escolher seu produto.</p>
                             <div class="share-box">
-                                <pre id="share-text">Dia 13 do #Desafio30diasUI! O desafio foi criar Feedbacks de Sistema. Projetei um Alerta, um Toast de sucesso e um Skeleton Screen. Manter o usuário informado é a chave para uma boa experiência! 📢 #UIDesign #UIChallenge #UX #DesignDeInterfaces</pre>
+                                <pre id="share-text">Dando sequência ao meu projeto de Landing Page no #Desafio30diasUI! Dia 17 foi sobre Prova Social. Criei uma seção de depoimentos para gerar confiança e credibilidade. ✨ #UIDesign #UIChallenge #SocialProof #DesignDeInterfaces</pre>
                                 <button id="copy-button" title="Copiar texto"><i class="far fa-copy"></i></button>
                             </div>
                         </div>

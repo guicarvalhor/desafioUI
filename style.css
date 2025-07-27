@@ -1140,3 +1140,114 @@ footer { text-align: center; padding: 40px 20px; color: var(--color-text-seconda
 .pro-tip-content p + p {
     margin-top: 12px;
 }
+/* --- ESTILOS PARA A SEÇÃO DE SUGESTÕES DE TEMA (DIA 15) --- */
+.theme-suggestions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin: 30px 0;
+}
+.suggestion-card {
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+}
+.suggestion-card i {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 16px;
+}
+.suggestion-card h3 {
+    font-size: 1.3rem;
+    color: var(--color-text-primary);
+    margin-bottom: 8px;
+}
+.suggestion-card p {
+    font-size: 0.95rem;
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+}
+.pro-tip-content .button.primary.small-button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    margin-top: 15px;
+}
+/* --- NOVO ESTILO GRANDE E CHAMATIVO PARA O BOTÃO DA DICA --- */
+
+.pro-tip-content .button.primary {
+    /* Tamanho e Layout */
+    display: block; /* Faz o botão ocupar a largura total do container */
+    width: 100%;
+    padding: 16px; /* Aumenta o espaçamento interno (altura) */
+    margin-top: 20px; /* Aumenta a distância do texto acima */
+    font-size: 1.1rem; /* Aumenta o tamanho da fonte */
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase; /* Deixa o texto em maiúsculas */
+    letter-spacing: 0.5px; /* Leve espaçamento entre as letras */
+    
+    /* Estilo Visual Chamativo */
+    color: white;
+    background: linear-gradient(45deg, var(--primary-color), color-mix(in srgb, var(--primary-color), #8B5CF6 50%)); /* Gradiente sutil */
+    border: none; /* Remove a borda padrão */
+    border-radius: 8px;
+    box-shadow: 0 4px 20px color-mix(in srgb, var(--primary-color), transparent 75%); /* Sombra/brilho colorido */
+
+    /* Interação e Animação */
+    transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+}
+
+/* Efeito Hover Aprimorado */
+.pro-tip-content .button.primary:hover {
+    transform: translateY(-3px) scale(1.02); /* Levanta e aumenta um pouco */
+    box-shadow: 0 8px 30px color-mix(in srgb, var(--primary-color), transparent 65%); /* Sombra mais forte */
+    text-decoration: none;
+}
+
+/* Ajuste para o ícone, se houver */
+.pro-tip-content .button.primary i {
+    margin-right: 10px;
+}
+
+/* --- ESTILO CORRETO E FINAL PARA LISTAS NUMERADAS NOS DESAFIOS --- */
+
+/* Aplica a todas as listas ordenadas <ol> dentro da área de conteúdo */
+.challenge-content ol {
+    list-style: none; /* Remove os números 1, 2, 3 padrão */
+    padding-left: 0;  /* Remove o recuo padrão do navegador */
+    counter-reset: custom-list-counter; /* Inicia nosso contador personalizado */
+    margin-top: 16px;
+}
+
+/* Cada item da lista (LI) */
+.challenge-content li {
+    position: relative;     /* Necessário para posicionar o número customizado */
+    padding-left: 40px;     /* Cria espaço à esquerda para o nosso número */
+    margin-bottom: 16px;    /* Espaço entre os itens da lista */
+    font-size: 1.1rem;      /* Tamanho de fonte para boa legibilidade */
+    line-height: 1.6;       /* Altura de linha para alinhar o texto verticalmente */
+    color: var(--color-text-secondary);
+}
+
+/* O número customizado (a "bolinha" azul) */
+.challenge-content li::before {
+    counter-increment: custom-list-counter; /* A cada item, soma +1 no contador */
+    content: counter(custom-list-counter);  /* Exibe o número do contador */
+    
+    /* Estilos da bolinha */
+    position: absolute;
+    left: 0;
+    top: 0; /* Alinha a bolinha com o topo do texto */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
