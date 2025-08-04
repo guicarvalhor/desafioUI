@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia 26: A Exploração com IA - 30 Dias de UI</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3WE0T6P6NG"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-3WE0T6P6NG');
+    </script>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <a href="../index.html" class="logo-link"><img src="../imagens/logo.png" alt="Logo do 30 Dias de UI" class="logo-image"></a>
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="../index.html">Desafios</a></li>
+                    <li><a href="../comece-a-qui.html">Comece por Aqui</a></li>
+                    <li><a href="../sobre.html">Sobre</a></li>
+                </ul>
+                <div class="theme-switcher">
+                    <input type="checkbox" id="theme-toggle" class="visually-hidden">
+                    <label for="theme-toggle" class="slider"><span class="visually-hidden">Mudar tema</span></label>
+                </div>
+                <a href="https://chat.whatsapp.com/JHP6GaSAny85Hl5dnGBant" target="_blank" rel="noopener noreferrer" class="community-button"><i class="fab fa-whatsapp"></i><span>Comunidade</span></a>
+            </nav>
+            <button class="nav-toggle" aria-label="abrir menu"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <main>
+        <section class="content-page">
+            <div class="container">
+                <a href="../index.html" class="back-link">← Voltar para todos os desafios</a>
+                <h1>Dia 26: A exploração com IA</h1>
+                <p class="subtitle">E se a IA pudesse desenhar telas inteiras para você? Aprenda a usar IAs generativas de UI para quebrar bloqueios criativos e explorar novas direções.</p>
+                
+                <div class="challenge-content">
+                    <h2>A IA como sua parceira de brainstorming</h2>
+                    <p>Ferramentas de "Generative UI" estão revolucionando a fase de ideação. Elas pegam um prompt de texto (ex: "crie uma tela de login para um app de música") e geram um design completo e editável em segundos. O objetivo não é que a IA faça todo o trabalho, mas que sirva como um ponto de partida para a criatividade.</p>
+                    <p>Pense nisso como ter um designer júnior ultrarrápido ao seu lado. Ele te entrega 10 rascunhos em 30 segundos, e você, como <b>diretor de arte</b>, escolhe as melhores ideias, as refina e as alinha com os objetivos do projeto e com seu Design System.</p>
+
+                    <h2>As novas ferramentas do ofício</h2>
+                    <p>O cenário de IAs que geram interfaces está evoluindo rapidamente. Algumas das ferramentas mais promissoras que você pode explorar são:</p>
+                    <ul>
+                        <li><a href="https://www.galileo.ai/" target="_blank"><b>Galileo AI:</b></a> Famosa por gerar designs de alta fidelidade diretamente a partir de um prompt de texto.</li>
+                        <li><a href="https://v0.dev/" target="_blank"><b>v0.dev (da Vercel):</b></a> Gera não apenas o design, mas também o código em React/Tailwind, ótimo para ver as ideias se tornarem componentes reais.</li>
+                        <li><a href="https://lovable.dev/" target="_blank"><b>Lovable:</b></a> Permite criar e subir sites reais para a web em poucos minutos.</li>
+                    </ul>
+
+                    <img src="/imagens/dia26/dia26.png" alt="Exemplo da interface de uma ferramenta de IA gerando uma tela de aplicativo" class="content-image">
+
+                    
+                    <div class="challenge-task enhanced-task">
+                        <div class="task-header">
+                            <i class="fas fa-lightbulb"></i>
+                            <h2>Seu desafio de hoje: o explorador de ideias</h2>
+                        </div>
+                        <p>Sua missão é usar a IA como uma parceira de brainstorming para explorar novas possibilidades para uma página secundária do seu projeto.</p>
+                        
+                        <div class="task-reference">
+                            <h4>Checklist do desafio:</h4>
+                            <ol>
+                                <li>Escolha uma página secundária para o seu projeto que ainda não fizemos, como uma <b>página de erro 404</b>.</li>
+                                <li>Escreva um <b>prompt detalhado</b> para uma ferramenta de IA generativa de UI (se tiver acesso) ou de imagem (como Midjourney/ImageFX) para criar um conceito visual para esta página.</li>
+                                <li>Analise o resultado gerado pela IA. O que funcionou bem? O que não se alinha com seu Design System?</li>
+                                <li>Use o resultado como <b>inspiração</b> para desenhar a sua própria versão da página, aplicando os princípios do seu Design System e melhorando as ideias da IA.</li>
+                            </ol>
+                        </div>
+    
+                        <div class="task-share">
+                            <h4>Concluiu? Mostre suas explorações!</h4>
+                            <p>Compartilhe o resultado da IA e como você o interpretou e o refinou. Mostrar seu processo de ideação é muito valioso.</p>
+                            <div class="share-box">
+                                <pre id="share-text">No Dia 26 do #Desafio30diasUI, explorei IAs generativas de UI! Usei a IA como parceira de brainstorming para criar conceitos para uma página de Contato. É incrível ver as ideias que surgem e poder refiná-las. 🤖✨ #UIDesign #UIChallenge #GenerativeAI #DesignDeInterfaces</pre>
+                                <button id="copy-button" title="Copiar texto"><i class="far fa-copy"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-main-content">
+                <div class="footer-brand"><a href="/" class="logo">30 Dias de UI</a><p>Uma jornada diária para aprimorar suas habilidades em Design de Interfaces.</p></div>
+                <div class="footer-links">
+                    <div class="footer-column"><h4>Navegação</h4><ul><li><a href="/index.html">Desafios</a></li><li><a href="/comece-a-qui.html">Comece por Aqui</a></li><li><a href="/sobre.html">Sobre</a></li></ul></div>
+                    <div class="footer-column"><h4>Me siga</h4><ul><li><a href="https://www.instagram.com/gui.uiux/" target="_blank" rel="noopener noreferrer">Instagram</a></li><li><a href="https://www.linkedin.com/in/guilherme-cr/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li></ul></div>
+                </div>
+            </div>
+            <div class="footer-copyright"><p>Guilherme Rodrigues © 2025 | Todos os direitos reservados.</p></div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js" defer></script>
+</body>
+</html>
