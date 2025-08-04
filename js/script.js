@@ -4,36 +4,34 @@ document.addEventListener('DOMContentLoaded', () => {
     const progressText = document.getElementById('progressText');
     const totalChallenges = 30;
 
-    // --- LÓGICA DE LIBERAÇÃO DIÁRIA (VERSÃO CORRIGIDA) ---
+    // --- LÓGICA DE LIBERAÇÃO DIÁRIA (VERSÃO FINAL - CÁLCULO LOCAL) ---
 
-    // 1. Defina a data de início do desafio em formato ISO com UTC (Z).
-    // Isso garante que não haja problemas com fuso horário.
-    // '2025-07-14T12:00:00Z' significa 14 de Julho de 2025, ao meio-dia no tempo universal.
-    const startDate = new Date('2025-07-14T12:00:00Z');
+    // 1. Data de início do desafio. O JS vai interpretá-la no fuso horário local.
+    const startDate = new Date(2025, 6, 14); // Mês 6 = Julho. Corresponde a 14 de Julho de 2025.
 
-    // 2. Função para calcular quantos dias se passaram usando UTC.
-    function getDaysPassed() {
+    // 2. Função que calcula a diferença de DIAS DE CALENDÁRIO.
+    function getUnlockedDayNumber() {
         const today = new Date();
         
-        // Converte as datas para milissegundos desde a época UTC, ignorando o fuso local.
-        const todayUTC = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate());
-        const startUTC = Date.UTC(startDate.getUTCFullYear(), startDate.getUTCMonth(), startDate.getUTCDate());
+        // Zera as horas de ambas as datas para comparar apenas os dias.
+        // Isso evita erros causados pela hora atual.
+        const startOfToday = new Date(today.getFullYear(), today.getMonth(), today.getDate());
+        const startOfStartDate = new Date(startDate.getFullYear(), startDate.getMonth(), startDate.getDate());
 
-        // Calcula a diferença de dias de forma precisa.
-        const timeDiff = todayUTC - startUTC;
-        const daysPassed = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+        const timeDiff = startOfToday.getTime() - startOfStartDate.getTime();
         
-        // O número de dias liberados é a diferença + 1 (para incluir o primeiro dia).
-        // Ex: No dia 14, a diferença é 0. 0 + 1 = Dia 1 liberado.
-        // Ex: No dia 15, a diferença é 1. 1 + 1 = Dia 2 liberado.
+        // Usamos Math.round para segurança contra mudanças de horário de verão.
+        const daysPassed = Math.round(timeDiff / (1000 * 60 * 60 * 24));
+        
         const unlockedDayNumber = daysPassed + 1;
 
+        // Se a data atual for antes do início, libera apenas o dia 1.
         return unlockedDayNumber < 1 ? 1 : unlockedDayNumber;
     }
 
     // 3. Função para desbloquear os cards
     function unlockChallenges() {
-        const unlockedDays = getDaysPassed();
+        const unlockedDays = getUnlockedDayNumber();
         
         challengeCards.forEach(card => {
             const day = parseInt(card.dataset.day, 10);
@@ -55,12 +53,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const completedCount = Object.keys(completedChallenges).filter(day => completedChallenges[day]).length;
         const progressPercentage = (completedCount / totalChallenges) * 100;
         
-        if (progressBar) {
-            progressBar.style.width = `${progressPercentage}%`;
-        }
-        if (progressText) {
-            progressText.textContent = `${completedCount} de 30 desafios completos`;
-        }
+        if (progressBar) { progressBar.style.width = `${progressPercentage}%`; }
+        if (progressText) { progressText.textContent = `${completedCount} de 30 desafios completos`; }
     }
 
     function updateCardUI(card) {
@@ -68,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const button = card.querySelector('.complete-btn');
         if (completedChallenges[day]) {
             card.classList.add('completed');
-            button.innerHTML = '<i class="fa-solid fa-check"></i>';
+            button.innerHTML = '<i class="fa-solid fa-check"></i> Completo';
         } else {
             card.classList.remove('completed');
             button.innerHTML = '<i class="fa-regular fa-circle"></i>';
@@ -80,9 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const button = card.querySelector('.complete-btn');
 
         button.addEventListener('click', (event) => {
-            if (card.classList.contains('disabled')) {
-                return;
-            }
+            if (card.classList.contains('disabled')) { return; }
             event.preventDefault();
             completedChallenges[day] = !completedChallenges[day];
             localStorage.setItem('uiChallengeProgress', JSON.stringify(completedChallenges));
@@ -93,13 +85,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function loadInitialState() {
         unlockChallenges();
-
         challengeCards.forEach(card => {
             if (!card.classList.contains('disabled')) {
                 updateCardUI(card);
             }
         });
-        
         updateProgress();
     }
 
