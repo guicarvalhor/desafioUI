@@ -1848,3 +1848,82 @@ footer {
 .gallery-card.featured {
     border: 2px solid var(--primary-color);
 }
+/* --- ESTILOS CORRIGIDOS PARA O FORMULÁRIO DE SUBMISSÃO (DIA 30) --- */
+
+.submission-form {
+    text-align: left;
+    margin: 40px 0;
+    padding: 30px;
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+}
+
+/* Container para cada campo (label + input) */
+.submission-form .form-group {
+    display: flex;
+    flex-direction: column; /* Garante que o label fique em cima do input */
+    margin-bottom: 20px;
+}
+
+/* Estilo dos rótulos (labels) */
+.submission-form label {
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: var(--color-text-secondary);
+}
+
+/* Estilo dos campos de texto e URL */
+.submission-form input[type="text"],
+.submission-form input[type="url"] {
+    width: 100%; /* Faz o campo ocupar toda a largura */
+    background-color: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 1rem;
+    color: var(--color-text-primary);
+    font-family: inherit;
+}
+
+.submission-form input[type="text"]:focus,
+.submission-form input[type="url"]:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--primary-color), transparent 80%);
+}
+
+/* Container para o checkbox e seu label */
+.form-group-checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin: 20px 0;
+}
+.form-group-checkbox input[type="checkbox"] {
+    margin-top: 5px; /* Alinha verticalmente o checkbox com o texto */
+    flex-shrink: 0;
+}
+.form-group-checkbox label {
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+    line-height: 1.5;
+}
+
+/* Estilo para o botão de envio (reutilizando estilo anterior) */
+.submission-form .submit-btn {
+    width: 100%;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+.submission-form .submit-btn:hover {
+    opacity: 0.9;
+}
