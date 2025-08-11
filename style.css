@@ -1927,3 +1927,73 @@ footer {
 .submission-form .submit-btn:hover {
     opacity: 0.9;
 }
+/* --- ESTILOS CORRIGIDOS PARA A BARRA DE ANÚNCIO (LOOP INFINITO) --- */
+
+/* A nova animação que move o texto da direita para a esquerda continuamente */
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%); /* Move exatamente a metade da largura total */
+    }
+}
+
+/* O container da barra */
+.announcement-bar {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 0;
+    overflow: hidden; /* Essencial para o efeito */
+    white-space: nowrap; /* Impede que o texto quebre a linha */
+}
+
+/* O parágrafo que contém o texto duplicado */
+.announcement-bar p {
+    margin: 0;
+    padding-left: 20%; /* Empurra o início do texto para fora da tela à direita */
+    display: inline-block;
+    animation: marquee 20s linear infinite; /* Ajuste a duração (30s) para mudar a velocidade */
+}
+
+.announcement-bar p:hover {
+    animation-play-state: paused; /* Pausa a animação ao passar o mouse */
+}
+
+.announcement-bar .separator {
+    margin: 0 2em; /* Espaço antes e depois do separador */
+}
+.sem-efeito{
+
+color: white
+}
+
+.gradient-text-animated {
+    /* 1. O Gradiente */
+    background: linear-gradient(
+        90deg, 
+        var(--primary-color), 
+        color-mix(in srgb, var(--primary-color), #EC4899 50%), /* Mistura um rosa para dar um brilho extra */
+        var(--primary-color)
+    );
+    
+    /* 2. Faz o fundo ser maior que o texto para a animação ter "espaço" para se mover */
+    background-size: 200% auto;
+
+    /* 3. A mágica: recorta o fundo no formato do texto */
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    /* 4. Deixa o texto transparente para o fundo aparecer */
+    -webkit-text-fill-color: transparent;
+
+    /* 5. Aplica a animação */
+    animation: gradient-scroll 3s linear infinite;
+}
+
+/* A animação que move a posição do gradiente */
+@keyframes gradient-scroll {
+    to {
+        background-position: 200% center;
+    }
+}
