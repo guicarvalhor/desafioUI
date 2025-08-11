@@ -107,3 +107,11 @@ function checkAndFireConfetti() {
 
 // Executa a verificação assim que a página carrega
 checkAndFireConfetti();
+
+ // JavaScript simples para controlar o clique
+        const fabMenu = document.getElementById('fab-menu');
+        const fabMainButton = document.getElementById('fab-main-button');
+
+        fabMainButton.addEventListener('click', () => {
+            fabMenu.classList.toggle('active');
+        });
