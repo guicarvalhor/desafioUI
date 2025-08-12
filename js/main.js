@@ -84,7 +84,7 @@ function fireConfetti() {
 // Função principal que verifica se deve ou não soltar o confete
 function checkAndFireConfetti() {
     // A data exata em que o efeito deve acontecer
-    const targetDateString = '2025-8-11'; // 12 de Agosto de 2025
+    const targetDateString = '2025-8-12'; // 12 de Agosto de 2025
 
     const today = new Date();
     // Formata a data de hoje para "ANO-MÊS-DIA"
