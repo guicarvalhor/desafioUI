@@ -682,7 +682,7 @@ footer {
   flex-wrap: wrap;
 }
 .social-btn {
-  padding: 12px 24px;
+  padding: 8px 24px;
   border-radius: 8px;
   text-decoration: none;
   font-weight: 700;
@@ -699,7 +699,7 @@ footer {
   color: white;
 }
 .social-btn.linkedin {
-  background-color: #0077b5;
+  background-color: var(--primary-color);
   color: white;
 }
 
@@ -959,7 +959,7 @@ footer {
   color: white;
 }
 .social-btn.linkedin {
-  background-color: #0077b5;
+  background-color: var(--primary-color);
   color: white;
 }
 
