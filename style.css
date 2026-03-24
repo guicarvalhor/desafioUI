@@ -1037,93 +1037,123 @@ footer {
 }
 
 /* --- ESTILOS PARA O RODAPÉ GLOBAL --- */
-
 .main-footer {
-  background-color: var(--color-surface);
-  border-top: 1px solid var(--color-border);
-  padding: 50px 0 30px 0;
-  font-size: 0.9rem;
-  color: var(--color-text-secondary);
+    background-color: #000;
+    padding: 80px 0 40px 0;
+    border-top: 1px solid #1f2937;
+    color: #9ca3af;
+    text-align: left; /* Garante alinhamento à esquerda global */
 }
 
-.footer-main-content {
-  display: flex;
-  justify-content: space-between; /* Alinhamento justificado */
-  align-items: flex-start;
-  text-align: left;
-  flex-wrap: wrap; /* Permite quebrar em telas menores */
-  gap: 40px;
-  padding: 0 20px;
-  margin-bottom: 40px;
+.footer-grid {
+    display: grid;
+    /* No print, as colunas de links são bem espaçadas */
+    grid-template-columns: 1.5fr 1fr 1fr; 
+    gap: 40px;
+    margin-bottom: 80px;
 }
 
-/* Coluna da Esquerda */
-.footer-brand {
-  flex: 2; /* Ocupa mais espaço */
-  min-width: 250px;
+/* Marca e Descrição */
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+    justify-content: flex-start; /* Alinha logo à esquerda */
 }
 
-.footer-brand .logo {
-  font-size: 1.8rem;
-  display: inline-block;
-  margin-bottom: 10px;
+.logo-badge {
+    background-color: var(--primary-color); 
+    color: #000;
+    font-weight: 800;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
 }
 
 .footer-brand p {
-  max-width: 300px;
-  line-height: 1.7;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    max-width: 320px;
+    margin-bottom: 24px;
+    color: #9ca3af;
 }
 
-/* Container das colunas da direita */
-.footer-links {
-  display: flex;
-  gap: 60px;
-  flex: 3; /* Ocupa mais espaço */
-  justify-content: flex-end;
+/* Social Icons */
+.social-links {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-start;
 }
 
+.social-icon {
+    width: 40px;
+    height: 40px;
+    background: #111;
+    border: 1px solid #1f2937;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #4b5563; /* Cor mais discreta como no print */
+    transition: 0.3s;
+}
+
+/* Colunas de Links */
 .footer-column h4 {
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: var(--color-text-primary);
-  margin-bottom: 15px;
+    color: #fff;
+    margin-bottom: 24px;
+    font-size: 1rem;
+    font-weight: 600;
 }
 
 .footer-column ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .footer-column ul li {
-  margin-bottom: 10px;
+    margin-bottom: 16px;
 }
 
-.footer-column a {
-  color: var(--color-text-secondary);
-  text-decoration: none;
-  transition: color 0.2s ease;
+.footer-column ul li a {
+    color: #6b7280;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 0.95rem;
 }
 
-.footer-column a:hover {
-  color: var(--primary-color);
-  text-decoration: underline;
+.footer-column ul li a:hover {
+    color: #fff;
 }
 
-/* Caixinha do Copyright */
-.footer-copyright {
-  margin-top: 30px;
-  padding: 20px 20px 0 20px;
-  border-top: 1px solid var(--color-border);
-  text-align: center;
+/* Linha de Copyright (Footer Bottom) */
+.footer-bottom {
+    padding-top: 32px;
+    border-top: 1px solid #1f2937;
+    display: flex;
+    justify-content: space-between; /* Texto de um lado, "Feito com..." do outro */
+    align-items: center;
+    font-size: 0.85rem;
+    color: #6b7280;
 }
 
-.footer-copyright p {
-  font-size: 0.85rem;
-  color: var(--primary-color); /* Cor principal azul, como pedido */
-  font-weight: 500;
+/* Ajuste Responsivo */
+@media (max-width: 768px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start; /* Mantém à esquerda no mobile */
+        gap: 16px;
+    }
 }
-
 /* Responsividade para o rodapé */
 @media (max-width: 768px) {
   .footer-main-content {
@@ -2093,6 +2123,13 @@ color: white
   margin-bottom: 50px;
 }
 
+/* STATS */:root {
+  --primary-color: #3b82f6; /* Azul do protótipo */
+  --bg-dark: #000;          /* Cor de fundo */
+  --card-bg: #111;          /* Cor interna dos cards */
+  --border-color: #1f2937;  /* Cor da borda */
+}
+
 /* STATS */
 .stats {
   display: grid;
@@ -2101,22 +2138,50 @@ color: white
 }
 
 .stat-card {
-  background: #111;
-  border: 1px solid #1f2937;
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
   border-radius: 12px;
-  padding: 20px;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza horizontalmente */
+  text-align: center;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+/* Hover discreto para UX */
+.stat-card:hover {
+  border-color: var(--primary-color);
+  transform: translateY(-5px);
+}
+
+/* Estilo do Icone (agora em Azul) */
+.stat-icon {
+  background: rgba(59, 130, 246, 0.1); /* Azul com 10% de opacidade */
+  color: var(--primary-color);         /* O ícone herda a cor principal */
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  font-size: 1.5rem;
 }
 
 .stat-card h3 {
-  font-size: 1.5rem;
-  color: var(--primary-color);
+  font-size: 2rem;
+  color: #fff; /* Mantendo o número branco para contraste, como no Figma */
+  margin-bottom: 4px;
+  font-weight: 700;
 }
 
 .stat-card p {
   font-size: 0.85rem;
   color: #9ca3af;
+  margin: 0;
+  text-transform: lowercase; /* Opcional, para seguir o estilo do seu print */
 }
-
 /* HEADER */
 .header {
   position: fixed;
@@ -2181,4 +2246,97 @@ color: white
   .hero h1 {
     font-size: 2.2rem;
   }
+}
+/* SEÇÃO COMO FUNCIONA */
+.how-it-works {
+    padding: 80px 20px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-badge {
+    display: inline-block;
+    background: rgba(59, 130, 246, 0.1);
+    color: var(--primary-color);
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 60px;
+}
+
+/* GRID DE CARDS */
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.step-card {
+    background: #111;
+    border: 1px solid #1f2937;
+    border-radius: 16px;
+    padding: 40px;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.step-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--primary-color);
+}
+
+.step-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 24px;
+}
+
+.step-number {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1;
+    /* Aqui ajustamos a cor para o azul com baixa opacidade */
+    color: rgba(59, 130, 246, 0.2); 
+}
+
+/* PONTINHOS COLORIDOS (DOTS) */
+.step-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.dot-blue { background: #3b82f6; box-shadow: 0 0 10px #3b82f6; }
+.dot-purple { background: #a855f7; box-shadow: 0 0 10px #a855f7; }
+.dot-yellow { background: #eab308; box-shadow: 0 0 10px #eab308; }
+
+.step-card h3 {
+    color: #fff;
+    font-size: 1.25rem;
+    margin-bottom: 16px;
+    line-height: 1.4;
+}
+
+.step-card p {
+    color: #9ca3af;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .steps-grid {
+        grid-template-columns: 1fr;
+    }
 }

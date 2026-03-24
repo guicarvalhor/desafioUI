@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-theme="dark">
 
 <head>
     <meta charset="UTF-8">
@@ -16,6 +16,7 @@
     <link rel="manifest" href="/site.webmanifest">
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 
 <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
@@ -31,35 +32,9 @@
 </script>
 
 <body>
-    <header class="main-header">
-        <div class="container">
-
-            <a href="/index.html" class="logo-link">
-                <img src="/imagens/logo.png" alt="Logo do 30 Dias de UI" class="logo-image">
-            </a>
-
-            <nav class="main-nav">
-                <ul class="nav-links">
-                    <li><a href="/index.html" class="active">Desafios</a></li>
-                    <li><a href="/comece-aqui.html">Comece por Aqui</a></li>
-                    <li><a href="/sobre.html">Sobre</a></li>
-                    <li><a href="/galeria.html">Galeria</a></li>
-                </ul>
-
-                <a href="https://www.linkedin.com/in/guilherme-cr/" target="_blank" class="social-btn linkedin">
-                    <i class="fab fa-linkedin"></i> Conecte-se comigo
-                </a>
-            </nav>
-
-            <button class="nav-toggle" aria-label="abrir menu">
-                <i class="fas fa-bars"></i>
-            </button>
-        </div>
-        </div>
-    </header>
+    <script src="js/load-header.js"></script>
 
     <main>
-
 
         <header class="header">
             <div class="container header-content">
@@ -100,28 +75,32 @@
                     criar componentes reais e montar um portfólio que impressiona.
                 </p>
 
-               <!--  <div class="hero-actions">
+                <!--  <div class="hero-actions">
                     <a href="#" class="btn primary">Começar desafio →</a>
                 </div>-->
 
                 <!-- STATS -->
                 <div class="stats">
                     <div class="stat-card">
+                        <div class="stat-icon"><i class="ph ph-calendar"></i></div>
                         <h3>30</h3>
                         <p>dias de desafio</p>
                     </div>
 
                     <div class="stat-card">
+                        <div class="stat-icon"><i class="ph ph-users"></i></div>
                         <h3>100+</h3>
                         <p>designers participando</p>
                     </div>
 
                     <div class="stat-card">
+                        <div class="stat-icon"><i class="ph ph-trophy"></i></div>
                         <h3>4</h3>
                         <p>semanas de conteúdo</p>
                     </div>
 
                     <div class="stat-card">
+                        <div class="stat-icon"><i class="ph ph-lightning"></i></div>
                         <h3>100%</h3>
                         <p>gratuito para começar</p>
                     </div>
@@ -497,57 +476,43 @@
             </div>
         </div>
     </main>
-    <!-- <div class="fab-container" id="fab-menu">
-       Links Secundários (aparecem ao clicar) 
-        <a href="https://prateleira-ux-ui.vercel.app/" target="_blank" class="fab-option">
-            <span class="fab-label">Prateleira UX</span>
-            <div class="fab-icon"><i class="fas fa-layer-group"></i></div>
-        </a>
-        <a href="https://guirodrigues.work/" target="_blank" class="fab-option">
-            <span class="fab-label">Portfólio Gui</span>
-            <div class="fab-icon"><i class="fas fa-briefcase"></i></div>
-        </a> 
-        <button class="fab-main" id="fab-main-button">
-            <i class="fas fa-plus"></i>
-        </button>
-    </div>-->
+    <section class="how-it-works">
+        <div class="section-badge">Como funciona</div>
+        <h2 class="section-title">Simples, consistente e eficaz</h2>
 
-
-    <footer class="main-footer">
-        <div class="container">
-            <div class="footer-main-content">
-                <div class="footer-brand">
-                    <a href="/" class="logo">30 Dias de UI</a>
-                    <p>Uma jornada diária para aprimorar suas habilidades em Design de Interfaces.</p>
+        <div class="steps-grid">
+            <div class="step-card">
+                <div class="step-header">
+                    <span class="step-number">01</span>
+                    <span class="step-dot dot-blue"></span>
                 </div>
-
-                <div class="footer-links">
-                    <div class="footer-column">
-                        <h4>Páginas</h4>
-                        <ul>
-                            <li><a href="/index.html">Desafios</a></li>
-                            <li><a href="/comece-aqui.html">Comece por Aqui</a></li>
-                            <li><a href="/sobre.html">Sobre o Projeto</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h4>Minhas redes</h4>
-                        <ul>
-                            <li><a href="https://www.instagram.com/gui.uiux/" target="_blank"
-                                    rel="noopener noreferrer">Instagram</a></li>
-                            <li><a href="https://www.linkedin.com/in/guilherme-cr/" target="_blank"
-                                    rel="noopener noreferrer">LinkedIn</a></li>
-                        </ul>
-                    </div>
-                </div>
+                <h3>Acesse o desafio do dia</h3>
+                <p>Cada dia você acessa um briefing detalhado com objetivos claros e referências.</p>
             </div>
 
-            <div class="footer-copyright">
-                <p>Guilherme Rodrigues &copy; 2026 | Todos os direitos reservados.</p>
+            <div class="step-card">
+                <div class="step-header">
+                    <span class="step-number">02</span>
+                    <span class="step-dot dot-purple"></span>
+                </div>
+                <h3>Crie no Figma ou na sua ferramenta</h3>
+                <p>Use a ferramenta que você preferir. O importante é praticar e entregar uma solução real para o
+                    desafio.</p>
+            </div>
+
+            <div class="step-card">
+                <div class="step-header">
+                    <span class="step-number">03</span>
+                    <span class="step-dot dot-yellow"></span>
+                </div>
+                <h3>Suba e compartilhe</h3>
+                <p>Publique sua solução na plataforma/linkedin para que outros designers vejam, se inspirem e deixem
+                    feedbacks.</p>
             </div>
         </div>
-    </footer>
+    </section>
 
+    <script src="js/load-footer.js"></script>
     <script src="js/script.js"></script>
     <script src="js/main.js"></script>
 </body>
