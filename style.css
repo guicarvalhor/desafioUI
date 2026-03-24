@@ -185,7 +185,7 @@ main {
 .hero {
   display: flex;
   align-items: center;
-  padding: 40px 20px;
+  padding: 20px 20px;
   background-color: var(--color-surface);
   border-bottom: 1px solid var(--color-border);
 }
@@ -211,7 +211,7 @@ main {
   text-align: right;
 }
 .hero-image img {
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
 }
 .progress-container {
@@ -1966,6 +1966,73 @@ footer {
 .sem-efeito{
 
 color: white
+}
+
+/* --- TABS --- */
+.tabs-container {
+  margin: 60px 0px;
+}
+
+.tab-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.tab-button {
+  background-color: transparent;
+  border: none;
+  color: var(--color-text-secondary);
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: "Space Grotesk", sans-serif;
+  text-align: center;
+  border-bottom: 2px solid transparent;
+  flex: 1;
+  min-width: 200px;
+}
+
+.tab-button:hover {
+  color: var(--color-text-primary);
+  background-color: var(--color-border);
+}
+
+.tab-button.active {
+  color: var(--primary-color);
+  border-bottom-color: var(--primary-color);
+  background-color: color-mix(in srgb, var(--primary-color), transparent 95%);
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.tab-content h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+/* Media queries para tabs */
+@media (max-width: 768px) {
+  .tab-buttons {
+    flex-wrap: wrap;
+  }
+
+  .tab-button {
+    min-width: auto;
+    flex: 1;
+  }
 }
 
 /* --- EFEITO DE GRADIENTE ANIMADO PARA TEXTO COM GLOW --- */
