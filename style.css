@@ -7,44 +7,21 @@
 :root {
   /* ... (variáveis de cor permanecem as mesmas) ... */
 }
-[data-theme="light"] {
-  /* ... */
-}
-[data-theme="dark"] {
-  /* ... */
-}
-
 :root {
   --light-bg: #f9fafb;
   --light-surface: #ffffff;
   --light-border: #e5e7eb;
   --light-text-primary: #1f2937;
   --light-text-secondary: #6b7280;
-  --dark-bg: #101010;
-  --dark-surface: #101010;
-  --dark-border: #3f3f46;
-  --dark-text-primary: #f4f4f5;
-  --dark-text-secondary: #a1a1aa;
   --primary-color: #3b82f6;
   --success-color: #22c55e;
   --header-height: 80px;
-}
-
-[data-theme="light"] {
-  --color-bg: var(--light-bg);
-  --color-surface: var(--light-surface);
-  --color-border: var(--light-border);
-  --color-text-primary: var(--light-text-primary);
-  --color-text-secondary: var(--light-text-secondary);
-  --glow-color: #2824f6;
-}
-
-[data-theme="dark"] {
-  --color-bg: var(--dark-bg);
-  --color-surface: var(--dark-surface);
-  --color-border: var(--dark-border);
-  --color-text-primary: var(--dark-text-primary);
-  --color-text-secondary: var(--dark-text-secondary);
+  --background-color: #101010;
+  --color-bg: var(--background-color);
+  --color-surface: #1a1a1a;
+  --color-border: #333333;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #cccccc;
   --glow-color: #2824f6;
 }
 
@@ -62,7 +39,6 @@ body {
   background-color: var(--color-bg);
   color: var(--color-text-primary);
   line-height: 1.6;
-  transition: background-color 0.3s, color 0.3s;
 }
 .container {
   max-width: 1100px;
@@ -73,7 +49,7 @@ main {
   padding-top: var(--header-height);
 }
 
-/* --- NAVEGAÇÃO E SELETOR DE TEMA --- */
+/* --- NAVEGAÇÃO --- */
 .main-header {
   background-color: color-mix(in srgb, var(--color-surface), transparent 5%);
   backdrop-filter: blur(10px);
@@ -126,50 +102,6 @@ main {
 .nav-links a.active {
   color: var(--color-text-primary);
   font-weight: 700;
-}
-
-/* Seletor de Tema com Estrutura Corrigida */
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
-}
-.slider {
-  cursor: pointer;
-  width: 50px;
-  height: 26px;
-  background-color: var(--color-border);
-  border-radius: 26px;
-  position: relative;
-  transition: background-color 0.3s;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 4px;
-}
-.slider .icon {
-  color: var(--primary-color);
-}
-.slider::before {
-  content: "";
-  position: absolute;
-  top: 3px;
-  left: 4px;
-  width: 20px;
-  height: 20px;
-  background-color: white;
-  border-radius: 50%;
-  transition: transform 0.3s ease-out;
-}
-
-/* A MÁGICA ACONTECE AQUI: A aparência do switch depende do ESTADO do checkbox, não do TEMA */
-#theme-toggle:checked + .slider::before {
-  transform: translateX(23px);
 }
 
 .nav-toggle {
@@ -2073,3 +2005,180 @@ color: white
         background-position: 100% center;
     }
   }
+
+  /* ================= HERO NOVO ================= */
+
+.hero {
+  position: relative;
+  padding: 120px 20px 80px;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* GRID + GLOW */
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at center, #2243c526, transparent 60%),
+    linear-gradient(#111 1px, transparent 1px),
+    linear-gradient(90deg, #111 1px, transparent 1px);
+  background-size: 100% 100%, 40px 40px, 40px 40px;
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+}
+
+/* TAG */
+.tag {
+  display: inline-block;
+  background: rgba(34, 145, 197, 0.15);
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  margin-bottom: 20px;
+}
+
+/* TITLE */
+.hero h1 {
+  font-size: 3.2rem;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero h1 span {
+  color: var(--primary-color);
+}
+
+/* TEXT */
+.hero p {
+  color: var(--color-text-secondary);
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+/* BUTTONS */
+.btn {
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.btn.primary {
+  background: var(--primary-color);
+  color: black;
+}
+
+.btn.secondary {
+  background: #1f2937;
+  color: white;
+}
+
+.btn.small {
+  padding: 8px 14px;
+  font-size: 0.9rem;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+/* STATS */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.stat-card {
+  background: #111;
+  border: 1px solid #1f2937;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.stat-card h3 {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+
+.stat-card p {
+  font-size: 0.85rem;
+  color: #9ca3af;
+}
+
+/* HEADER */
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #1f2937;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.badge {
+  background: #22c55e;
+  color: black;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav a {
+  color: #9ca3af;
+  text-decoration: none;
+}
+
+.nav a.active {
+  color: #22c55e;
+}
+
+.header-actions {
+  display: flex;
+  gap: 15px;
+}
+
+.login {
+  color: #9ca3af;
+  text-decoration: none;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .stats {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+}

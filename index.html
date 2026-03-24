@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR" data-theme="dark">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -43,16 +43,8 @@
                     <li><a href="/index.html" class="active">Desafios</a></li>
                     <li><a href="/comece-aqui.html">Comece por Aqui</a></li>
                     <li><a href="/sobre.html">Sobre</a></li>
-                    <li><a href="/galeria.html" class="gradient-text-animated">Galeria</a></li>
+                    <li><a href="/galeria.html">Galeria</a></li>
                 </ul>
-                </ul>
-
-                <div class="theme-switcher">
-                    <input type="checkbox" id="theme-toggle" class="visually-hidden">
-                    <label for="theme-toggle" class="slider">
-                        <span class="visually-hidden">Mudar tema</span>
-                    </label>
-                </div>
 
                 <a href="https://www.linkedin.com/in/guilherme-cr/" target="_blank" class="social-btn linkedin">
                     <i class="fab fa-linkedin"></i> Conecte-se comigo
@@ -67,27 +59,76 @@
     </header>
 
     <main>
-        
 
-        <div class="hero">
-            <div class="container hero-container">
-                <div class="hero-text">
-                    <h1>Desafio 30 Dias de UI</h1>
-                    <p class="subtitle">Torne-se um designer melhor completando um desafio por dia.</p>
-                    <div class="progress-container">
-                        <div class="progress-bar-background">
-                            <div id="progressBar" class="progress-bar"></div>
-                        </div>
-                        <span id="progressText">0 de 30 desafios completos</span>
+
+        <header class="header">
+            <div class="container header-content">
+
+                <div class="logo">
+                    <span class="badge">30</span>
+                    <span>30 Dias de UI</span>
+                </div>
+
+                <nav class="nav">
+                    <a href="#" class="active">Desafios</a>
+                    <a href="#">Como funciona</a>
+                    <a href="#">Galeria</a>
+                </nav>
+
+                <div class="header-actions">
+                    <a href="#" class="login">Entrar</a>
+                    <a href="#" class="btn primary small">Começar grátis</a>
+                </div>
+
+            </div>
+        </header>
+
+        <section class="hero">
+            <div class="hero-bg"></div>
+
+            <div class="container hero-content">
+
+                <span class="tag">Todas as semanas já disponíveis!</span>
+
+                <h1>
+                    Evolua seu design <br>
+                    <span>30 dias seguidos</span>
+                </h1>
+
+                <p>
+                    Um desafio diário de UI Design para construir fundamentos sólidos,
+                    criar componentes reais e montar um portfólio que impressiona.
+                </p>
+
+               <!--  <div class="hero-actions">
+                    <a href="#" class="btn primary">Começar desafio →</a>
+                </div>-->
+
+                <!-- STATS -->
+                <div class="stats">
+                    <div class="stat-card">
+                        <h3>30</h3>
+                        <p>dias de desafio</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <h3>100+</h3>
+                        <p>designers participando</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <h3>4</h3>
+                        <p>semanas de conteúdo</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <h3>100%</h3>
+                        <p>gratuito para começar</p>
                     </div>
                 </div>
-                <div class="hero-image">
-                    <img src="imagens/uidesign.png" alt="Ilustração de uma pessoa montando a interface de um site.">
 
-                </div>
             </div>
-
-        </div>
+        </section>
         <div class="announcement-bar">
             <p>
                 Quer ter seu case publicado na galeria? <a href="/galeria.html" class="sem-efeito">Clique aqui</a> e
@@ -207,7 +248,8 @@
                         </div>
                         <div class="challenge-card disabled" data-day="9">
                             <a href="desafios/dia9.html" class="challenge-link">
-                                <img src="/imagens/semana2/Menu.png" alt="Ilustração sobre Menu" class="card-illustration">
+                                <img src="/imagens/semana2/Menu.png" alt="Ilustração sobre Menu"
+                                    class="card-illustration">
                                 <div class="challenge-info">
                                     <h3><span class="day-number">Dia 9</span>Navegação e Menu</h3>
                                 </div>
@@ -455,7 +497,7 @@
             </div>
         </div>
     </main>
-     <!-- <div class="fab-container" id="fab-menu">
+    <!-- <div class="fab-container" id="fab-menu">
        Links Secundários (aparecem ao clicar) 
         <a href="https://prateleira-ux-ui.vercel.app/" target="_blank" class="fab-option">
             <span class="fab-label">Prateleira UX</span>
